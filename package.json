@@ -18,7 +18,9 @@
     "@remix-run/serve": "^2.15.2",
     "isbot": "^4.4.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "vite-tsconfig-paths": "5.1.4",
+    "@vercel/remix": "2.15.2"
   },
   "devDependencies": {
     "vite": "6.0.11",
