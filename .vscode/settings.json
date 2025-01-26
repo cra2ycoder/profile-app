@@ -1,0 +1,75 @@
+{
+  "editor.fontFamily": "'Fira Cold','Dank Mono','JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13.5,
+  "editor.formatOnSave": true,
+  "editor.accessibilityPageSize": 16,
+  "editor.formatOnType": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.suggestSelection": "first",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "css.validate": false,
+  "scss.validate": true,
+  "javascript.validate.enable": false,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.gitignore": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/__pycache__": true,
+    "**/.idea": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    ".prettierrc": true,
+    "**/*.md": true,
+    "**/**/*.md": true,
+    "**/**/**/*.md": true,
+    "**/.gitignore": true,
+    "**/.vscode": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.gitignore": true,
+    "**/yarn.lock": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 14,
+  "cSpell.words": ["mvel"]
+}
