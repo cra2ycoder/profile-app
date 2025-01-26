@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <header className="py-5 fixed top-0 ">
+      {/* <header className="py-5 fixed top-0">
         <div className="fill-gray-700">
           <svg
             className="size-16"
@@ -12,11 +12,14 @@ export default function Home() {
             <path d="M307.411,436L153.969,282.908l49.62-49.754L306.647,335.725,412.759,230.092l-102.3-103.337L360.085,77,512,230.092Zm0-156.154L204.353,177.275,98.241,282.908,200.536,386.245,150.915,436-1,282.908,203.589,77,357.031,230.092Z"></path>
           </svg>
         </div>
-      </header>
-      <main className="w-full h-screen m-auto flex flex-row">
-        <div className="w-[50%] h-full fixed flex flex-col justify-center">
-          <div className="flex justify-center flex-col gap-2 w-100 mt-10 w-3xl max-w-3xl">
-            <h1 className="text-6xl font-weight-400 font-[Inter] font-extrabold text-gray-800 tracking-tight bg-gradient-to-r from-blue-800 to-purple-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
+      </header> */}
+      <main className="w-full h-screen m-auto flex flex-col w-3xl max-w-3xl">
+        <div className="w-full flex flex-col mb-10">
+          <div className="rounded-full w-[150px] h-[150px] overflow-hidden drop-shadow-lg mt-10">
+            <img src="./mohaa.jpeg" alt="profile picture" />
+          </div>
+          <div className="flex justify-center flex-col gap-2 w-100 w-3xl max-w-3xl">
+            <h1 className="text-5xl font-weight-400 mt-5 font-[Inter] font-extrabold text-gray-800 tracking-tight bg-gradient-to-r from-blue-800 to-purple-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
               Mohanraj Rangasamy
             </h1>
             <p className="text-2xl tracking-tight text-gray-500 font-[DM Sans]">
@@ -41,7 +44,7 @@ export default function Home() {
               </svg>
               <p>+91 770 829 629 5</p>
             </div>
-            <div>|</div>
+            <div className="text-gray-600">|</div>
             <a
               className="flex flex-row text-gray-700 gap-2"
               href="mailto:mohaa.r.6789@gmail.com"
@@ -112,14 +115,26 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="bg-white border-l w-[50%] h-full ml-[50%]">
-          <footer className="border-t py-2 text-center">
-            <p className="text-gray-400 text-sm">
-              © 2025 Cra2y Coder. All rights reserved.
-            </p>
-          </footer>
+        <div className="">
+          <p className="text-4xl font-weight-400 font-[Inter] font-bold text-gray-800 tracking-tight bg-gradient-to-r from-sky-800 to-cyan-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
+            Core Skills
+          </p>
+          <p className="text-4xl font-weight-400 font-[Inter] font-bold text-gray-800 tracking-tight bg-gradient-to-r from-sky-800 to-cyan-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
+            Employment History
+          </p>
+          <p className="text-4xl font-weight-400 font-[Inter] font-bold text-gray-800 tracking-tight bg-gradient-to-r from-sky-800 to-cyan-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
+            Educational Qualifications
+          </p>
+          <p className="text-4xl font-weight-400 font-[Inter] font-bold text-gray-800 tracking-tight bg-gradient-to-r from-sky-800 to-cyan-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
+            Awards and Recognitions
+          </p>
         </div>
       </main>
+      <footer className="border-t py-2 text-center">
+        <p className="text-gray-400 text-sm">
+          © 2025 Cra2y Coder. All rights reserved.
+        </p>
+      </footer>
     </>
   )
 }
