@@ -27,7 +27,10 @@ export default async function Home() {
       <DetailList
         title="Core Skills"
         api="/api/skills"
-        filterBy={['design', 'technical']}
+        filterBy={[
+          { title: 'Technical', filterKey: 'tech' },
+          { title: 'Design Tool', filterKey: 'design' },
+        ]}
       />
       {/* <DetailList title="Educational Qualifications" api="api/education" />
       <DetailList title="Awards and Recognitions" api="api/awards" /> */}

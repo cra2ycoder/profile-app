@@ -29,7 +29,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="h-full px-10">{children}</body>
+      <body className="h-full px-10 bg-gradient-to-t from-gray-800 to-black">
+        {children}
+      </body>
     </html>
   )
 }
