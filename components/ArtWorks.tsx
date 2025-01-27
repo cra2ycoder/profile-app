@@ -20,7 +20,7 @@ export default async function ArtWorks() {
                 loading="lazy"
                 src={photo}
                 alt={`photo-${index}`}
-                className="aspect-ratio-auto grayscale"
+                className="aspect-ratio-auto"
               />
             </div>
           )

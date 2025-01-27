@@ -1,19 +1,21 @@
-type TDetailListProps = {
+type TSkillListProps = {
   title: string
   api?: string
   filterBy?: string[]
 }
 
-export default async function DetailList(props: TDetailListProps) {
+export default async function SkillList(props: TSkillListProps) {
   const { api, filterBy = [] } = props
 
-  const apiResponse = (await fetch(`http://localhost:3000/${api}`).then(res =>
-    res.json()
-  )) || { data: [] }
+  const apiResponse = (await fetch(`http://localhost:3000/api/skills`).then(
+    res => res.json()
+  )) || {
+    data: [],
+  }
 
   const filteredData: any = {}
 
-  apiResponse.data.forEach((x: any) => {
+  apiResponse.data.forEach((x: unknown) => {
     if (!filteredData[x.category]) {
       filteredData[x.category] = {
         title: filterBy.find(y => y.filterKey === x.category)?.title,

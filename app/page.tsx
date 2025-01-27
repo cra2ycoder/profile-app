@@ -1,13 +1,8 @@
-// 'use client'
-
-// import useSwr from 'swr'
-import type { InferGetStaticPropsType, GetStaticProps } from 'next'
-
 import Footer from '@/components/Footer'
 import UserInfo from '@/components/UserInfo'
-import ContactInfo from '@/components/ContactInfo'
+// import ContactInfo from '@/components/ContactInfo'
 import SocialAccounts from '@/components/SocialAccounts'
-import DetailList from '@/components/DetailList'
+import SkillList from '@/components/SkillList'
 import AppLayout from '@/components/AppLayout'
 import DownloadCV from '@/components/DownloadCV'
 import WorkExperience from '@/components/WorkExperience'
@@ -28,7 +23,7 @@ export default async function Home() {
           </div>
         </div>
         <WorkExperience />
-        <DetailList
+        <SkillList
           title="Skills I've Developed"
           api="/api/skills"
           filterBy={[
