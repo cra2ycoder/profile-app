@@ -32,10 +32,11 @@ export default async function DetailList(props: TDetailListProps) {
         {filterBy.map((x: any, index: number) => {
           const data = filteredData[x.filterKey]
           const { title, items } = data || {}
+
           return (
             <div
               key={`category-${index}`}
-              className="flex flex-row flex-wrap gap-4 my-6"
+              className="flex flex-row flex-wrap gap-2 my-6"
             >
               <p className="w-full text-lg text-zinc-100 font-[Inter]">
                 {title}
@@ -43,12 +44,12 @@ export default async function DetailList(props: TDetailListProps) {
               {items?.map((item: any, id: number) => (
                 <div
                   key={id}
-                  className="flex flex-row w-auto h-10 gap-3 items-center mr-2 flex-wrap drop-shadow-lg"
+                  className="flex flex-row w-12 h-12 items-center mr-2 flex-wrap drop-shadow-lg bg-white rounded-full overflow-hidden p-2 justify-center items-center"
                 >
                   <img
                     src={item.logo}
                     alt={`tool-logo-${item.name}`}
-                    className="overflow-hidden w-10 bg-white rounded-full"
+                    className="overflow-hidden"
                   />
                 </div>
               ))}
