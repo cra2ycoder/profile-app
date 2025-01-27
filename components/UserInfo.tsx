@@ -3,6 +3,7 @@ import ContactInfo from './ContactInfo'
 export default function UserInfo() {
   return (
     <>
+      <div className="w-full h-[400px] bg-gradient-to-t from-transparent to-black fixed top-0 left-0 z-[-1]" />
       <div className="flex flex-row flex-wrap gap-6 mb-6 items-center">
         <div className="rounded-full w-[150px] h-[150px] overflow-hidden drop-shadow-lg mt-6 border-white border-4">
           <img loading="lazy" src="./mohaa.jpeg" alt="profile picture" />
