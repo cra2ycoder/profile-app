@@ -10,7 +10,7 @@ export default async function ArtWorks() {
           return (
             <div
               key={`artwork-${index}`}
-              className={`flex shrink-0 snap-center h-[400px] rounded-3xl overflow-hidden origin-bottom-left relative  ${
+              className={`flex shrink-0 snap-center h-[400px] rounded-3xl overflow-hidden origin-bottom-left relative drop-shadow-xl  ${
                 index % 2 === 0
                   ? 'translate-y-12 rotate-2'
                   : '-translate-y-4 -rotate-2'
@@ -20,7 +20,7 @@ export default async function ArtWorks() {
                 loading="lazy"
                 src={photo}
                 alt={`photo-${index}`}
-                className="aspect-ratio-auto"
+                className="aspect-ratio-auto grayscale"
               />
             </div>
           )

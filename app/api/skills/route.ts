@@ -87,6 +87,11 @@ export async function GET(req: NextRequest) {
           category: 'tech',
         },
         {
+          name: 'Tailwindcss',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_tailwind.png',
+          category: 'tech',
+        },
+        {
           name: 'SASS',
           logo: 'https://cra2ycoder.sirv.com//logos/logo_sass.png',
           category: 'tech',
