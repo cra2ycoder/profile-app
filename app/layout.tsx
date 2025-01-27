@@ -30,7 +30,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`h-full bg-gradient-to-t from-gray-100 from-40% via-white-40% to-gray-300 to-60% px-10`}
+        className={`h-full bg-gradient-to-tr from-gray-100 to-gray-300 px-10`}
       >
         {children}
       </body>
