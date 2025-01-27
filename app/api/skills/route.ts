@@ -27,11 +27,6 @@ export async function GET(req: NextRequest) {
           category: 'design',
         },
         {
-          name: 'Nodejs',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_nodejs.png',
-          category: 'tech',
-        },
-        {
           name: 'HTML',
           logo: 'https://cra2ycoder.sirv.com//logos/logo_html.png',
           category: 'tech',
@@ -52,13 +47,13 @@ export async function GET(req: NextRequest) {
           category: 'tech',
         },
         {
-          name: 'SASS',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_sass.png',
+          name: 'Python',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_python.png',
           category: 'tech',
         },
         {
-          name: 'Markdown',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_md.png',
+          name: 'Nodejs',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_nodejs.png',
           category: 'tech',
         },
         {
@@ -69,6 +64,36 @@ export async function GET(req: NextRequest) {
         {
           name: 'Next.js',
           logo: 'https://cra2ycoder.sirv.com//logos/logo_nextjs.png',
+          category: 'tech',
+        },
+        {
+          name: 'React.js',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_react.png',
+          category: 'tech',
+        },
+        {
+          name: 'Tanstack Query',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_tsq.png',
+          category: 'tech',
+        },
+        {
+          name: 'MobX',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_mobx.png',
+          category: 'tech',
+        },
+        {
+          name: 'JQuery',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_jquery.jpg',
+          category: 'tech',
+        },
+        {
+          name: 'SASS',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_sass.png',
+          category: 'tech',
+        },
+        {
+          name: 'Styled Components',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_styledcomp.png',
           category: 'tech',
         },
         {
@@ -87,21 +112,6 @@ export async function GET(req: NextRequest) {
           category: 'tech',
         },
         {
-          name: 'React.js',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_react.png',
-          category: 'tech',
-        },
-        {
-          name: 'MobX',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_mobx.png',
-          category: 'tech',
-        },
-        {
-          name: 'Styled Components',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_styledcomp.png',
-          category: 'tech',
-        },
-        {
           name: 'Webpack',
           logo: 'https://cra2ycoder.sirv.com//logos/logo_webpack.png',
           category: 'tech',
@@ -112,11 +122,6 @@ export async function GET(req: NextRequest) {
           category: 'tech',
         },
         {
-          name: 'JQuery',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_jquery.jpg',
-          category: 'tech',
-        },
-        {
           name: 'Jest',
           logo: 'https://cra2ycoder.sirv.com//logos/logo_jest.png',
           category: 'tech',
@@ -124,6 +129,11 @@ export async function GET(req: NextRequest) {
         {
           name: 'Cypress',
           logo: 'https://cra2ycoder.sirv.com//logos/logo_cypress.webp',
+          category: 'tech',
+        },
+        {
+          name: 'Markdown',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_md.png',
           category: 'tech',
         },
         {

@@ -10,11 +10,10 @@ import SocialAccounts from '@/components/SocialAccounts'
 import DetailList from '@/components/DetailList'
 import AppLayout from '@/components/AppLayout'
 import DownloadCV from '@/components/DownloadCV'
+import WorkExperience from '@/components/WorkExperience'
+import Awards from '@/components/Awards'
 
 export default async function Home() {
-  // const { data, error, isLoading } = useSwr('/api/skills', fetcher)
-  // console.log({ data, error, isLoading })
-
   return (
     <AppLayout>
       <div className="w-full flex flex-col mb-10">
@@ -23,17 +22,16 @@ export default async function Home() {
         <SocialAccounts />
         <DownloadCV />
       </div>
-      {/* <DetailList title="Employment History" api="/api/work" /> */}
+      <WorkExperience />
       <DetailList
-        title="Core Skills"
+        title="Skills I've Developed"
         api="/api/skills"
         filterBy={[
-          { title: 'Technical', filterKey: 'tech' },
-          { title: 'Design Tool', filterKey: 'design' },
+          { title: 'Technical Stacks', filterKey: 'tech' },
+          { title: 'Design Tools', filterKey: 'design' },
         ]}
       />
-      {/* <DetailList title="Educational Qualifications" api="api/education" />
-      <DetailList title="Awards and Recognitions" api="api/awards" /> */}
+      <Awards />
       <Footer />
     </AppLayout>
   )

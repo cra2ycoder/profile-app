@@ -24,7 +24,7 @@ export default async function DetailList(props: TDetailListProps) {
   })
 
   return (
-    <div className="w-full flex gap-4 flex-col">
+    <div className="w-full flex gap-4 flex-col mb-10">
       <p className="w-auto inline-block text-4xl font-weight-400 font-[Inter] font-bold bg-gradient-to-r from-violet-800 to-pink-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
         {props.title}
       </p>
@@ -36,15 +36,15 @@ export default async function DetailList(props: TDetailListProps) {
           return (
             <div
               key={`category-${index}`}
-              className="flex flex-row flex-wrap gap-2 my-6"
+              className="flex flex-row flex-wrap gap-2 my-2"
             >
-              <p className="w-full text-lg text-zinc-100 font-[Inter]">
+              <p className="w-full text-1xl text-gray-600 font-[DM Sans] font-bold mb-4">
                 {title}
               </p>
               {items?.map((item: any, id: number) => (
                 <div
                   key={id}
-                  className="flex flex-row w-12 h-12 items-center mr-2 flex-wrap drop-shadow-lg bg-white rounded-full overflow-hidden p-2 justify-center items-center"
+                  className="flex flex-row w-12 h-12 items-center mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden p-2 justify-center items-center"
                 >
                   <img
                     src={item.logo}

@@ -14,9 +14,12 @@ export async function GET(req: NextRequest) {
         },
         {
           logo: 'https://cra2ycoder.sirv.com//logos/logo_skava.png',
-          name: 'Skava',
+          name: 'Skava an Infosys',
           role: 'Creative Manager',
           duration: '2009 - 2019',
+          styles: {
+            backgroundColor: 'black',
+          },
         },
       ],
     },
