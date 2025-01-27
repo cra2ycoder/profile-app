@@ -1,3 +1,5 @@
+import Title from './Title'
+
 export default async function WorkExperience() {
   const apiResponse = (await fetch(`http://localhost:3000/api/work`).then(res =>
     res.json()
@@ -5,9 +7,7 @@ export default async function WorkExperience() {
 
   return (
     <div className="w-full flex gap-4 flex-col mb-10">
-      <p className="w-auto inline-block text-4xl font-weight-400 font-[Inter] font-bold bg-gradient-to-r from-violet-800 to-pink-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
-        Companies I’ve Worked With
-      </p>
+      <Title text="Companies I’ve Worked With" />
       <div className="flex flex-row gap-3 w-[100%] mt-6">
         {apiResponse.data?.map((company, index: number) => {
           return (

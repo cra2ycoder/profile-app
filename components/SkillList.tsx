@@ -1,7 +1,7 @@
+import Title from './Title'
+
 type TSkillListProps = {
-  title: string
-  api?: string
-  filterBy?: string[]
+  filterBy?: any[]
 }
 
 export default async function SkillList(props: TSkillListProps) {
@@ -27,9 +27,7 @@ export default async function SkillList(props: TSkillListProps) {
 
   return (
     <div className="w-full flex gap-4 flex-col mb-10">
-      <p className="w-auto inline-block text-4xl font-weight-400 font-[Inter] font-bold bg-gradient-to-r from-violet-800 to-pink-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
-        {props.title}
-      </p>
+      <Title text="Skills I've Developed" />
       <div className="flex flex-row flex-wrap gap-3">
         {filterBy.map((x: any, index: number) => {
           const data = filteredData[x.filterKey]
