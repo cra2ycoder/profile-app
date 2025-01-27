@@ -1,6 +1,6 @@
 export default function ContactInfo() {
   return (
-    <div className="flex flex-row w-full items-center gap-4 mt-4">
+    <div className="flex flex-row w-full items-center gap-2 flex-wrap">
       <div className="flex flex-row text-gray-600 gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +31,7 @@ export default function ContactInfo() {
         </svg>
         mohanraj.dev.6789@gmail.com
       </a>
+      <p className="w-full text-gray-400">Location: Bangalore, Karnataka.</p>
     </div>
   )
 }

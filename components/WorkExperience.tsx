@@ -18,6 +18,7 @@ export default async function WorkExperience() {
               <div className="flex flex-row gap-2 items-center">
                 <div className="flex flex-row w-20 h-20 items-center mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden p-3 justify-center items-center overflow-hidden">
                   <img
+                    loading="lazy"
                     src={company.logo}
                     alt={`company-logo-${company.name}`}
                     className="overflow-hidden"
@@ -33,7 +34,7 @@ export default async function WorkExperience() {
                   </p>
                   <a
                     href={`/roles/?company=${company.name}`}
-                    className="text-blue-800 underline font-bold text-sm"
+                    className="text-indigo-800 underline font-bold text-sm"
                   >
                     View My Works
                   </a>

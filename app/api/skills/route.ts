@@ -23,7 +23,7 @@ export async function GET(req: NextRequest) {
         },
         {
           name: 'Figma',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_sketch.jpg',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_figma.png',
           category: 'design',
         },
         {

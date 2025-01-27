@@ -1,7 +1,7 @@
 export default function SocialAccounts() {
   return (
     <>
-      <div className="w-full mt-10 flex flex-row gap-5 align-center">
+      <div className="flex flex-row gap-5 align-center">
         <a
           href="https://www.linkedin.com/in/mohanraj-rangasamy-b15b7125/"
           target="_blank"
