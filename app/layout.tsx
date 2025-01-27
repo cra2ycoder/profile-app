@@ -30,7 +30,7 @@ export default function RootLayout({
         />
       </head>
       {/* <body className="px-10 bg-gray-950">{children}</body> */}
-      <body className="px-10 bg-gradient-to-b from-gray-950 via-black from-85% to-gray-900 to-100%">
+      <body className="px-10 bg-gradient-to-b from-gray-950 via-black from-75% to-slate-900 to-100%">
         {children}
       </body>
     </html>
