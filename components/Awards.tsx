@@ -12,10 +12,10 @@ export default async function Awards() {
         {apiResponse.data.map((awards, index: number) => {
           return (
             <div className="flex flex-col w-[50%]" key={`awards-${index}`}>
-              <h2 className="text-2xl font-light tracking-tight font-[DM Sans] text-gray-300">
+              <h2 className="text-2xl font-bold tracking-tight font-[DM Sans] text-gray-300">
                 {awards.title}
               </h2>
-              <p className="text-sm tracking-tight font-[Inter] font-light text-gray-600 mt-1">
+              <p className="text-md tracking-tight font-[Inter] font-light text-gray-600 mt-1">
                 {awards.for}
               </p>
               <p className="text-sm tracking-tight font-[Inter] font-light text-gray-400 mt-2">
