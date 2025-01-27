@@ -9,18 +9,18 @@ export default function UserInfo() {
           <img loading="lazy" src="./mohaa.jpeg" alt="profile picture" />
         </div>
         <div>
-          <h1 className="text-6xl font-weight-400 font-[DM Sans] font-extrabold tracking-tight bg-gradient-to-r from-violet-800 to-pink-600 text-transparent bg-clip-text whitespace-nowrap leading-normal">
+          <h1 className="text-6xl font-weight-400 font-[DM Sans] font-extrabold tracking-tight bg-gradient-to-r from-violet-800 to-pink-600 text-transparent bg-clip-text leading-normal">
             Mohanraj Rangasamy
           </h1>
           <ContactInfo />
         </div>
       </div>
       <div className="flex justify-center flex-col gap-2 w-100 w-full">
-        <p className="text-2xl tracking-tight font-[DM Sans] font-light text-gray-500 my-4">
+        <p className="text-2xl tracking-tight font-[DM Sans] font-light text-gray-400 my-4">
           Front-End Developer with 7+ years of experience building responsive,
           user-friendly websites in the recruiting industry. Proficient in
           <span className="text-white ml-1 font-bold underline">
-            HTML, CSS, JavaScript/TypeScript, React.js, and Next.js
+            HTML5, CSS3, JavaScript/TypeScript, React.js, and Next.js
           </span>
           , with a passion for creating seamless, accessible user experiences.
           Skilled in Adobe Photoshop and XD, bridging design and development.
