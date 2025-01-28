@@ -18,7 +18,7 @@ type TWorkList = {
 
 export default async function WorkExperience() {
   const apiResponse: TWorkList = (await fetch(
-    `http://localhost:3000/api/work`
+    `${process.env.NEXT_PUBLIC_API_DOMAIN}/api/work`
   ).then(res => res.json())) || { data: [] }
 
   return (

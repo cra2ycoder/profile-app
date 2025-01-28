@@ -13,7 +13,7 @@ type TUserInfo = {
 
 export default async function UserInfo() {
   const apiResponse: TUserInfo = (await fetch(
-    `http://localhost:3000/api/userinfo`
+    `${process.env.NEXT_PUBLIC_API_DOMAIN}/api/userinfo`
   ).then(res => res.json())) || { data: {} }
 
   return (
@@ -22,7 +22,7 @@ export default async function UserInfo() {
       <div className="flex flex-row flex-wrap gap-6 mb-6 items-center">
         <div className="rounded-full w-[150px] h-[150px] overflow-hidden drop-shadow-lg border-white border-4">
           <Image
-            src="http://localhost:3000/mohaa.jpeg"
+            src={`${process.env.NEXT_PUBLIC_API_DOMAIN}/mohaa.jpeg`}
             alt="profile picture"
             width={150}
             height={150}

@@ -12,7 +12,7 @@ type TAwardsProps = {
 
 export default async function Awards() {
   const apiResponse: TAwardsProps = (await fetch(
-    `http://localhost:3000/api/awards`
+    `${process.env.NEXT_PUBLIC_API_DOMAIN}/api/awards`
   ).then(res => res.json())) || { data: [] }
 
   return (

@@ -6,7 +6,7 @@ type TArtWorkProps = {
 
 export default async function ArtWorks() {
   const apiResponse: TArtWorkProps = (await fetch(
-    `http://localhost:3000/api/artworks`
+    `${process.env.NEXT_PUBLIC_API_DOMAIN}/api/artworks`
   ).then(res => res.json())) || { data: [] }
 
   return (

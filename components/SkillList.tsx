@@ -31,7 +31,7 @@ export default async function SkillList(props: TSkillListProps) {
   const { filterBy = [] } = props
 
   const apiResponse: TSkillList = (await fetch(
-    `http://localhost:3000/api/skills`
+    `${process.env.NEXT_PUBLIC_API_DOMAIN}/api/skills`
   ).then(res => res.json())) || {
     data: [],
   }
