@@ -1,4 +1,4 @@
-import { ArtIcon, CertificateIcon, BuildingIcon, DesktopIcon } from './BGIcons'
+import { ArtIcon, CertificateIcon, BuildingIcon, DesktopIcon } from './Icons'
 
 const menus = [
   {

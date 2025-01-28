@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { SunOutlinedIcon, SunFilledIcon } from './BGIcons'
+import { SunOutlinedIcon, SunFilledIcon } from './Icons'
 
 export default function ThemeToggler() {
   const [showLightTheme, setShowLightTheme] = useState<Boolean>(false)

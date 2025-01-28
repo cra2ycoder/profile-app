@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Footer() {
   const curDate = new Date()
   return (
