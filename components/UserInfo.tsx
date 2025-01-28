@@ -20,7 +20,7 @@ export default function UserInfo() {
           Front-End Developer with 7+ years of experience building responsive,
           user-friendly websites in the recruiting industry. Proficient in
           <span className="text-white ml-1 font-bold underline">
-            HTML5, CSS3, JavaScript/TypeScript, React.js, and Next.js
+            HTML5, CSS3, JavaScript/TypeScript, Node.js, React.js, and Next.js
           </span>
           , with a passion for creating seamless, accessible user experiences.
           Skilled in Adobe Photoshop and XD, bridging design and development.

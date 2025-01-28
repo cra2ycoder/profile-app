@@ -19,7 +19,6 @@ export default async function Awards() {
                 {awards.for}
               </p>
               <p className="text-sm tracking-tight font-[Inter] font-light text-slate-700 mt-2">
-                -{` `}
                 {awards.from}
               </p>
             </div>
