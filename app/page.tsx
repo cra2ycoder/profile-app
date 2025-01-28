@@ -10,12 +10,16 @@ import Awards from '@/components/Awards'
 import ArtWorks from '@/components/ArtWorks'
 import Title from '@/components/Title'
 // import { AwardIcon } from '@/components/BGIcons'
+import ThemeToggler from '@/components/ThemeToggler'
+import SideNav from '@/components/SideNav'
 
 export default async function Home() {
   return (
     <>
+      <SideNav />
+      <ThemeToggler />
       <AppLayout>
-        <div className="w-full flex flex-col py-10">
+        <div className="w-full flex flex-col mb-10">
           <UserInfo />
           <div className="flex flex-row gap-4 items-center mt-10">
             <DownloadCV />
