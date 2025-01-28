@@ -1,25 +1,49 @@
 import Image from 'next/image'
 import Title from './Title'
 
+type TSkillFilterItem = {
+  title: string
+  filterKey: string
+}
+
 type TSkillListProps = {
-  filterBy?: any[]
+  filterBy?: TSkillFilterItem[]
+}
+
+type TSkillItem = {
+  name: string
+  logo: string
+  category: string
+}
+
+type TSkillList = {
+  data: TSkillItem[]
+}
+
+type TFilteredDataType = {
+  [key: string]: {
+    title?: string
+    items: TSkillItem[]
+  }
 }
 
 export default async function SkillList(props: TSkillListProps) {
-  const { api, filterBy = [] } = props
+  const { filterBy = [] } = props
 
-  const apiResponse = (await fetch(`http://localhost:3000/api/skills`).then(
-    res => res.json()
-  )) || {
+  const apiResponse: TSkillList = (await fetch(
+    `http://localhost:3000/api/skills`
+  ).then(res => res.json())) || {
     data: [],
   }
 
-  const filteredData: any = {}
+  const filteredData: TFilteredDataType = {}
 
-  apiResponse.data.forEach((x: unknown) => {
+  apiResponse.data.forEach((x: TSkillItem) => {
     if (!filteredData[x.category]) {
       filteredData[x.category] = {
-        title: filterBy.find(y => y.filterKey === x.category)?.title,
+        title: filterBy.find(
+          (y: TSkillFilterItem) => y.filterKey === x.category
+        )?.title,
         items: [],
       }
     }
@@ -30,7 +54,7 @@ export default async function SkillList(props: TSkillListProps) {
     <div className="w-full flex gap-4 flex-col mb-10">
       <Title text="Skills I've Developed" />
       <div className="flex flex-row flex-wrap gap-3">
-        {filterBy.map((x: any, index: number) => {
+        {filterBy.map((x: TSkillFilterItem, index: number) => {
           const data = filteredData[x.filterKey]
           const { title, items } = data || {}
 
@@ -42,7 +66,7 @@ export default async function SkillList(props: TSkillListProps) {
               <p className="w-full text-1xl text-gray-400 font-bold mb-4">
                 {title}
               </p>
-              {items?.map((item: any, id: number) => (
+              {items?.map((item: TSkillItem, id: number) => (
                 <div
                   key={id}
                   className="flex flex-row w-12 h-12 items-center mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden p-2 justify-center items-center"

@@ -1,15 +1,25 @@
 import Title from './Title'
 
+type TAwardItem = {
+  title: string
+  for: string
+  from: string
+}
+
+type TAwardsProps = {
+  data: TAwardItem[]
+}
+
 export default async function Awards() {
-  const apiResponse = (await fetch(`http://localhost:3000/api/awards`).then(
-    res => res.json()
-  )) || { data: [] }
+  const apiResponse: TAwardsProps = (await fetch(
+    `http://localhost:3000/api/awards`
+  ).then(res => res.json())) || { data: [] }
 
   return (
     <div className="w-full flex gap-4 lg:flex-col sm:flex-row mb-10 flex-wrap">
       <Title text="Professional Recognition" />
       <div className="w-full gap-y-8 flex flex-wrap mt-6">
-        {apiResponse.data.map((awards, index: number) => {
+        {apiResponse.data.map((awards: TAwardItem, index: number) => {
           return (
             <div
               className="flex flex-col lg:w-[50%] sm:w-full pr-4"

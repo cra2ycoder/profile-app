@@ -1,9 +1,13 @@
 import Image from 'next/image'
 
+type TArtWorkProps = {
+  data: string[]
+}
+
 export default async function ArtWorks() {
-  const apiResponse = (await fetch(`http://localhost:3000/api/artworks`).then(
-    res => res.json()
-  )) || { data: [] }
+  const apiResponse: TArtWorkProps = (await fetch(
+    `http://localhost:3000/api/artworks`
+  ).then(res => res.json())) || { data: [] }
 
   return (
     <div className="w-full mb-10">

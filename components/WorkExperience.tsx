@@ -1,16 +1,31 @@
 import Image from 'next/image'
 import Title from './Title'
 
+type TWorkItem = {
+  logo: string
+  name: string
+  role: string
+  duration: string
+  responsibilities?: string[]
+  styles?: {
+    [key: string]: string
+  }
+}
+
+type TWorkList = {
+  data: TWorkItem[]
+}
+
 export default async function WorkExperience() {
-  const apiResponse = (await fetch(`http://localhost:3000/api/work`).then(res =>
-    res.json()
-  )) || { data: [] }
+  const apiResponse: TWorkList = (await fetch(
+    `http://localhost:3000/api/work`
+  ).then(res => res.json())) || { data: [] }
 
   return (
     <div className="w-full flex gap-4 flex-col mb-10">
       <Title text="Companies I’ve Worked With" />
       <div className="flex flex-row gap-10 w-[100%] mt-6 flex-wrap">
-        {apiResponse.data?.map((company, index: number) => {
+        {apiResponse.data?.map((company: TWorkItem, index: number) => {
           return (
             <div
               className="flex flex-row pb-10 w-full flex-wrap border-b border-gray-800"
