@@ -4,12 +4,12 @@ import AppLayout from '@/components/AppLayout'
 import Footer from '@/components/Footer'
 import ThemeToggler from '@/components/ThemeToggler'
 import SocialAccounts from '@/components/SocialAccounts'
-// import SkillList from '@/components/SkillList'
+import SkillList from '@/components/SkillList'
 import DownloadCV from '@/components/DownloadCV'
 import UserInfo from '@/components/UserInfo'
-// import WorkExperience from '@/components/WorkExperience'
-// import Awards from '@/components/Awards'
-// import ArtWorks from '@/components/ArtWorks'
+import WorkExperience from '@/components/WorkExperience'
+import Awards from '@/components/Awards'
+import ArtWorks from '@/components/ArtWorks'
 
 export default function Index() {
   return (
@@ -25,19 +25,19 @@ export default function Index() {
             <SocialAccounts />
           </div>
         </div>
-        {/* <WorkExperience /> */}
-        {/* <SkillList
+        <WorkExperience />
+        <SkillList
           filterBy={[
             { title: 'Technical Stacks', filterKey: 'tech' },
             { title: 'Design Tools', filterKey: 'design' },
           ]}
         />
-        <Awards /> */}
+        <Awards />
         <div className="w-full flex gap-4 flex-col mb-10">
           <Title text="What I Enjoy in My Free Time" />
         </div>
       </AppLayout>
-      {/* <ArtWorks /> */}
+      <ArtWorks />
       <Footer />
     </>
   )
