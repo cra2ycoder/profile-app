@@ -1,20 +1,21 @@
-import Title from '@/components/Title'
-import SideNav from '@/components/SideNav'
-import AppLayout from '@/components/AppLayout'
-import Footer from '@/components/Footer'
-import ThemeToggler from '@/components/ThemeToggler'
-import SocialAccounts from '@/components/SocialAccounts'
-import SkillList from '@/components/SkillList'
-import DownloadCV from '@/components/DownloadCV'
-import UserInfo from '@/components/UserInfo'
-import WorkExperience from '@/components/WorkExperience'
-import Awards from '@/components/Awards'
-import ArtWorks from '@/components/ArtWorks'
+// import Title from '@/components/Title'
+// import SideNav from '@/components/SideNav'
+// import AppLayout from '@/components/AppLayout'
+// import Footer from '@/components/Footer'
+// import ThemeToggler from '@/components/ThemeToggler'
+// import SocialAccounts from '@/components/SocialAccounts'
+// import SkillList from '@/components/SkillList'
+// import DownloadCV from '@/components/DownloadCV'
+// import UserInfo from '@/components/UserInfo'
+// import WorkExperience from '@/components/WorkExperience'
+// import Awards from '@/components/Awards'
+// import ArtWorks from '@/components/ArtWorks'
 
-export default async function Home() {
+export default function Index() {
   return (
     <>
-      <SideNav />
+      <div>home page</div>
+      {/* <SideNav />
       <ThemeToggler />
       <AppLayout>
         <div className="w-full flex flex-col mb-10">
@@ -38,7 +39,7 @@ export default async function Home() {
         </div>
       </AppLayout>
       <ArtWorks />
-      <Footer />
+      <Footer /> */}
     </>
   )
 }
