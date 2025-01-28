@@ -1,15 +1,21 @@
 # TODO
 
-- [ ] Fully responsive
+- [-] Fully responsive
+- [x] Dark and light theme icon adding on the top corner
 - [ ] Dark and Light theme implementations
-- [ ] Download CV button functionality
+- [x] Download CV button functionality
   - [ ] Dependency: ensure you have the latest resume uploaded at the `sirv`
 - [ ] Animations
-- [ ] `next/image` integration for all the images toa avoid build failures
-- [ ] must typings
+- [x] `next/image` integration for all the images toa avoid build failures
+- [x] must typings
 - [ ] Deploy at vercel and keep updating the latest
 - [x] Footer Date should be with latest year always
 - [ ] when hover on the skill tool icons that should show the tool/lib name
 - [ ] Experience to be corrected (may be)
 - [x] Fonts cleanup for sharp and smooth looking`
 - [ ] update your deployed link at the `LinkedIn` and `Github`
+- [-] quick menus on the left side with mobile support
+- [x] all svg icons moving to single file
+- [x] BGIcons file name changing to Icons
+- [x] env introducing
+- [x] google font replacing with `next/font/google` instead of link tags
