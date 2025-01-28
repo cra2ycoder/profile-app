@@ -6,13 +6,13 @@ export default async function WorkExperience() {
   )) || { data: [] }
 
   return (
-    <div className="w-full flex gap-4 flex-col">
+    <div className="w-full flex gap-4 flex-col mb-10">
       <Title text="Companies I’ve Worked With" />
-      <div className="flex flex-row gap-3 w-[100%] mt-6 flex-wrap">
+      <div className="flex flex-row gap-10 w-[100%] mt-6 flex-wrap">
         {apiResponse.data?.map((company, index: number) => {
           return (
             <div
-              className="flex flex-row pb-10 w-full flex-wrap mb-10 border-b border-gray-800"
+              className="flex flex-row pb-10 w-full flex-wrap border-b border-gray-800"
               key={`company-${index}`}
             >
               <div className="flex flex-row gap-2 items-center">
@@ -40,7 +40,7 @@ export default async function WorkExperience() {
                   </a> */}
                 </div>
               </div>
-              <ol className="flex gap-3 flex-col mt-6 list-disc max-w-3xl pl-[6rem]">
+              <ol className="flex gap-3 flex-col mt-6 list-disc max-w-3xl lg:pl-[6rem]">
                 {company.responsibilities?.map((x: string, index: number) => (
                   <li
                     key={`resp-${index}`}
