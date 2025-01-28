@@ -9,22 +9,22 @@ export async function GET() {
         {
           title: 'MVP of the Year 2024',
           for: 'Innovation: Building Extensions for Admin Tool',
-          from: 'Vishy, Platform Engineering VP, Infosys Equinox',
+          from: 'Mr. Vishy, Platform Engineering VP, Infosys Equinox',
         },
         {
           title: 'Employee of the Year 2018',
           for: 'For overall performance of the year and elected by voting methods',
-          from: 'Arish, Former CEO, Skava an Infosys',
+          from: 'Mr. Arish, Former CEO, Skava an Infosys',
         },
         {
           title: 'Founder Award 2017',
           for: 'Innovation: Automation tool for Photoshop to HTML (P2H)',
-          from: 'Arish, Former CEO, Skava an Infosys',
+          from: 'Mr. Arish, Former CEO, Skava an Infosys',
         },
         {
           title: 'Founder Award 2016',
           for: 'Innovation: SASS Library (ADZE)',
-          from: 'Sudha Arish, Former CEO, Skava an Infosys',
+          from: 'Mrs. Sudha Arish, Former CEO, Skava an Infosys',
         },
         {
           title: 'Star Awards',
@@ -34,7 +34,7 @@ export async function GET() {
         {
           title: 'Distinguished Service Awards',
           for: 'Excellence of Service from 2009 - 2024',
-          from: 'Amit Kelly, CEO, Infosys Equinox',
+          from: 'Mr. Amit Kelly, CEO, Infosys Equinox',
         },
       ],
     },

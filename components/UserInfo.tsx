@@ -16,7 +16,7 @@ export default function UserInfo() {
         </div>
       </div>
       <div className="flex justify-center flex-col gap-2 w-100 w-full">
-        <p className="text-2xl tracking-tight font-[DM Sans] font-light text-gray-400 my-4">
+        <p className="text-2xl tracking-tight font-light text-gray-400 my-4">
           Front-End Developer with 7+ years of experience building responsive,
           user-friendly websites in the recruiting industry. Proficient in
           <span className="text-white ml-1 font-bold underline">

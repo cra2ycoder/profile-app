@@ -12,15 +12,11 @@ export default async function Awards() {
         {apiResponse.data.map((awards, index: number) => {
           return (
             <div className="flex flex-col w-[50%] pr-4" key={`awards-${index}`}>
-              <h2 className="text-2xl font-bold tracking-tight font-[DM Sans] text-gray-300">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-300">
                 {awards.title}
               </h2>
-              <p className="text-lg tracking-tight font-[Inter] font-light text-sky-600 mt-1">
-                {awards.for}
-              </p>
-              <p className="text-sm tracking-tight font-[Inter] font-light text-slate-600 mt-2">
-                {awards.from}
-              </p>
+              <p className="font-light text-sky-600 mt-1">{awards.for}</p>
+              <p className="font-light text-slate-600 mt-2">{awards.from}</p>
             </div>
           )
         })}
