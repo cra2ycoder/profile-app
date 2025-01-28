@@ -7,7 +7,7 @@ export async function GET() {
     {
       data: [
         {
-          title: 'MVP (Most Valuable Player)',
+          title: 'MVP of the Year 2024',
           for: 'Innovation: Building Extensions for Admin Tool',
           from: 'Vishy, Platform Engineering VP, Infosys Equinox',
         },

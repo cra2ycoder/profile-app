@@ -15,10 +15,10 @@ export default async function Awards() {
               <h2 className="text-2xl font-bold tracking-tight font-[DM Sans] text-gray-300">
                 {awards.title}
               </h2>
-              <p className="text-lg tracking-tight font-[Inter] font-light text-sky-900 mt-1">
+              <p className="text-lg tracking-tight font-[Inter] font-light text-sky-600 mt-1">
                 {awards.for}
               </p>
-              <p className="text-sm tracking-tight font-[Inter] font-light text-slate-700 mt-2">
+              <p className="text-sm tracking-tight font-[Inter] font-light text-slate-600 mt-2">
                 {awards.from}
               </p>
             </div>

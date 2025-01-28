@@ -1,0 +1,13 @@
+# TODO
+
+- [ ] Fully responsive
+- [ ] Dark and Light theme implementations
+- [ ] Download CV button functionality
+  - [ ] Dependency: ensure you have the latest resume uploaded at the `sirv`
+- [ ] Animations
+- [ ] `next/image` integration for all the images toa avoid build failures
+- [ ] must typings
+- [ ] Deploy at vercel and keep updating the latest
+- [ ] Footer Date should be with latest year always
+- [ ] when hover on the skill tool icons that should show the tool/lib name
+- [x] Experience to be corrected (may be)

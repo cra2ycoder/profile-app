@@ -12,7 +12,7 @@ export default async function WorkExperience() {
         {apiResponse.data?.map((company, index: number) => {
           return (
             <div
-              className="flex flex-row pb-4 w-full flex-wrap mb-10"
+              className="flex flex-row pb-10 w-full flex-wrap mb-10 border-b border-gray-800"
               key={`company-${index}`}
             >
               <div className="flex flex-row gap-2 items-center">
