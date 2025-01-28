@@ -8,7 +8,7 @@
 - [ ] Animations
 - [x] `next/image` integration for all the images toa avoid build failures
 - [x] must typings
-- [ ] Deploy at vercel and keep updating the latest
+- [x] Deploy at vercel and keep updating the latest
 - [x] Footer Date should be with latest year always
 - [ ] when hover on the skill tool icons that should show the tool/lib name
 - [ ] Experience to be corrected (may be)
