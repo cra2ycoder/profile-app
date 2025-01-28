@@ -6,7 +6,7 @@ import ThemeToggler from '@/components/ThemeToggler'
 import SocialAccounts from '@/components/SocialAccounts'
 // import SkillList from '@/components/SkillList'
 import DownloadCV from '@/components/DownloadCV'
-// import UserInfo from '@/components/UserInfo'
+import UserInfo from '@/components/UserInfo'
 // import WorkExperience from '@/components/WorkExperience'
 // import Awards from '@/components/Awards'
 // import ArtWorks from '@/components/ArtWorks'
@@ -18,7 +18,7 @@ export default function Index() {
       <ThemeToggler />
       <AppLayout>
         <div className="w-full flex flex-col mb-10">
-          {/* <UserInfo /> */}
+          <UserInfo />
           <div className="flex flex-row gap-4 items-center mt-10">
             <DownloadCV />
             <div className="border-gray-600 border-r h-full" />
