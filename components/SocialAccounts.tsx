@@ -6,13 +6,22 @@ export default function SocialAccounts() {
       <a
         href="https://www.linkedin.com/in/mohanraj-rangasamy-b15b7125/"
         target="_blank"
+        aria-label="LinkedIn Account"
       >
         <LinkedInIcon />
       </a>
-      <a href="https://github.com/cra2ycoder" target="_blank">
+      <a
+        href="https://github.com/cra2ycoder"
+        target="_blank"
+        aria-label="GitHub Account"
+      >
         <GithubIcon />
       </a>
-      <a href="https://codesandbox.io/u/cra2ycoder" target="_blank">
+      <a
+        href="https://codesandbox.io/u/cra2ycoder"
+        target="_blank"
+        aria-label="Code sandbox Account"
+      >
         <CodeSandboxIcon />
       </a>
     </div>

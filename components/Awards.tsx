@@ -25,9 +25,9 @@ export default async function Awards() {
               className="flex flex-col lg:w-[50%] sm:w-full pr-4"
               key={`awards-${index}`}
             >
-              <h2 className="text-2xl font-bold tracking-tight text-gray-300">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-300">
                 {awards.title}
-              </h2>
+              </h3>
               <p className="font-light text-sky-600 mt-1">{awards.for}</p>
               <p className="font-light text-slate-600 mt-2">{awards.from}</p>
             </div>

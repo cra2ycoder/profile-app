@@ -43,18 +43,12 @@ export default async function WorkExperience() {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h6 className="text-gray-200 font-bold text-2xl font-[DM Sans]">
+                  <h3 className="text-gray-200 font-bold text-2xl font-[DM Sans]">
                     {company.name}
-                  </h6>
+                  </h3>
                   <p className="text-gray-500">
                     {company.role} | {company.duration}
                   </p>
-                  {/* <a
-                    href={`/roles/?company=${company.name}`}
-                    className="text-indigo-800 underline font-bold text-sm"
-                  >
-                    View My Works
-                  </a> */}
                 </div>
               </div>
               <ol className="flex gap-3 flex-col mt-6 list-disc max-w-3xl lg:pl-[6rem]">
