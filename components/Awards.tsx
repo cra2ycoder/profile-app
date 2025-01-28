@@ -6,12 +6,15 @@ export default async function Awards() {
   )) || { data: [] }
 
   return (
-    <div className="w-full flex gap-4 flex-col mb-10">
+    <div className="w-full flex gap-4 lg:flex-col sm:flex-row mb-10 flex-wrap">
       <Title text="Professional Recognition" />
       <div className="w-full gap-y-8 flex flex-wrap mt-6">
         {apiResponse.data.map((awards, index: number) => {
           return (
-            <div className="flex flex-col w-[50%] pr-4" key={`awards-${index}`}>
+            <div
+              className="flex flex-col lg:w-[50%] sm:w-full pr-4"
+              key={`awards-${index}`}
+            >
               <h2 className="text-2xl font-bold tracking-tight text-gray-300">
                 {awards.title}
               </h2>
