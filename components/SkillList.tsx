@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Title from './Title'
 
 type TSkillListProps = {
@@ -46,11 +47,12 @@ export default async function SkillList(props: TSkillListProps) {
                   key={id}
                   className="flex flex-row w-12 h-12 items-center mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden p-2 justify-center items-center"
                 >
-                  <img
-                    loading="lazy"
+                  <Image
                     src={item.logo}
                     alt={`tool-logo-${item.name}`}
                     className="overflow-hidden"
+                    width={12 * 16}
+                    height={12 * 16}
                   />
                 </div>
               ))}

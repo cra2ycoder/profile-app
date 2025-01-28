@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default async function ArtWorks() {
   const apiResponse = (await fetch(`http://localhost:3000/api/artworks`).then(
     res => res.json()
@@ -10,17 +12,18 @@ export default async function ArtWorks() {
           return (
             <div
               key={`artwork-${index}`}
-              className={`flex shrink-0 snap-center h-[400px] rounded-3xl overflow-hidden origin-bottom-left relative drop-shadow-xl  ${
+              className={`flex shrink-0 snap-center w-[300px] h-[400px] rounded-3xl overflow-hidden origin-bottom-left relative drop-shadow-xl ${
                 index % 2 === 0
                   ? 'translate-y-12 rotate-2'
                   : '-translate-y-4 -rotate-2'
               }`}
             >
-              <img
-                loading="lazy"
+              <Image
                 src={photo}
                 alt={`photo-${index}`}
                 className="aspect-ratio-auto"
+                fill={true}
+                objectFit="contain"
               />
             </div>
           )
