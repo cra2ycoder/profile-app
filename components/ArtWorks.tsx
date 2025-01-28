@@ -27,7 +27,7 @@ export default async function ArtWorks() {
                 alt={`photo-${index}`}
                 className="aspect-ratio-auto"
                 fill={true}
-                objectFit="contain"
+                style={{ objectFit: 'cover' }}
               />
             </div>
           )

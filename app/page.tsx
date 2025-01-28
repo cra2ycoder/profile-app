@@ -1,17 +1,15 @@
+import Title from '@/components/Title'
+import SideNav from '@/components/SideNav'
+import AppLayout from '@/components/AppLayout'
 import Footer from '@/components/Footer'
-import UserInfo from '@/components/UserInfo'
-// import ContactInfo from '@/components/ContactInfo'
+import ThemeToggler from '@/components/ThemeToggler'
 import SocialAccounts from '@/components/SocialAccounts'
 import SkillList from '@/components/SkillList'
-import AppLayout from '@/components/AppLayout'
 import DownloadCV from '@/components/DownloadCV'
+import UserInfo from '@/components/UserInfo'
 import WorkExperience from '@/components/WorkExperience'
 import Awards from '@/components/Awards'
 import ArtWorks from '@/components/ArtWorks'
-import Title from '@/components/Title'
-// import { AwardIcon } from '@/components/BGIcons'
-import ThemeToggler from '@/components/ThemeToggler'
-import SideNav from '@/components/SideNav'
 
 export default async function Home() {
   return (
@@ -38,7 +36,6 @@ export default async function Home() {
         <div className="w-full flex gap-4 flex-col mb-10">
           <Title text="What I Enjoy in My Free Time" />
         </div>
-        {/* <AwardIcon /> */}
       </AppLayout>
       <ArtWorks />
       <Footer />
