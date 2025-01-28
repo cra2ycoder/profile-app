@@ -4,10 +4,20 @@ import './globals.css'
 
 const interFont = Inter({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: [
+    `cyrillic`,
+    `cyrillic-ext`,
+    `greek`,
+    `greek-ext`,
+    `latin`,
+    `latin-ext`,
+    `vietnamese`,
+  ],
 })
 
 const dmSansFont = DM_Sans({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: [`latin`, `latin-ext`],
 })
 
 export const metadata: Metadata = {
