@@ -1,5 +1,14 @@
 import type { Metadata } from 'next'
+import { Inter, DM_Sans } from 'next/font/google'
 import './globals.css'
+
+const interFont = Inter({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
+
+const dmSansFont = DM_Sans({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
 
 export const metadata: Metadata = {
   title: 'Mohanraj Profile',
@@ -13,23 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="px-10 bg-gradient-to-b from-gray-950 via-black from-75% to-slate-900 to-100%">
+      <body
+        className={`${interFont.className} ${dmSansFont.className} px-10 bg-gradient-to-b from-gray-950 via-black from-75% to-slate-900 to-100%`}
+      >
         {children}
       </body>
     </html>
