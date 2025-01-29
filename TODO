@@ -1,8 +1,8 @@
 # TODO
 
-- [-] Fully responsive
+- [x] Fully responsive
 - [x] Dark and light theme icon adding on the top corner
-- [ ] Dark and Light theme implementations
+- [x] Dark and Light theme implementations
 - [x] Download CV button functionality
   - [ ] Dependency: ensure you have the latest resume uploaded at the `sirv`
 - [ ] Animations

@@ -28,7 +28,7 @@ export default async function WorkExperience() {
         {apiResponse.data?.map((company: TWorkItem, index: number) => {
           return (
             <div
-              className="flex flex-row pb-10 w-full flex-wrap border-b border-gray-800"
+              className="flex flex-row pb-10 w-full flex-wrap border-b dark:border-gray-800 border-gray-300"
               key={`company-${index}`}
             >
               <div className="flex flex-row gap-2 items-center">
@@ -43,7 +43,7 @@ export default async function WorkExperience() {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-gray-200 font-bold text-2xl font-[DM Sans]">
+                  <h3 className="dark:text-gray-200 text-gray-900 font-bold text-2xl font-[DM Sans]">
                     {company.name}
                   </h3>
                   <p className="text-gray-500">
@@ -55,7 +55,7 @@ export default async function WorkExperience() {
                 {company.responsibilities?.map((x: string, index: number) => (
                   <li
                     key={`resp-${index}`}
-                    className="font-[Inter] text-md text-gray-400"
+                    className="font-[Inter] text-md dark:text-gray-400 text-gray-700"
                     dangerouslySetInnerHTML={{ __html: x }}
                   />
                 ))}

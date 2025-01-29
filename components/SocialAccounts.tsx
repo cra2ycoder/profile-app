@@ -7,6 +7,7 @@ export default function SocialAccounts() {
         href="https://www.linkedin.com/in/mohanraj-rangasamy-b15b7125/"
         target="_blank"
         aria-label="LinkedIn Account"
+        className="w-[21px] overflow-hidden"
       >
         <LinkedInIcon />
       </a>

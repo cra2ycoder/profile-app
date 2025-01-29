@@ -1,11 +1,11 @@
 export default function Footer() {
   const curDate = new Date()
   return (
-    <footer className="border-t py-2 text-end border-gray-800 flex justify-between flex-row">
-      <p className="text-sm text-gray-700">
-        Tech Stacks: next.js v15 + react.js v19 + tailwindcss v4 + vercel
+    <footer className="border-t py-2 text-end dark:border-gray-800 border-gray-300 flex justify-between flex-row">
+      <p className="text-sm dark:text-gray-700 text-gray-500">
+        Tech Stacks: Next.js v15 + React.js v19 + Tailwindcss v4 + Vercel
       </p>
-      <p className="text-gray-600 text-sm">
+      <p className="dark:text-gray-700 text-gray-500 text-sm">
         © {curDate.getFullYear()} Cra2y Coder. All rights reserved.
       </p>
     </footer>

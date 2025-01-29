@@ -63,7 +63,7 @@ export default async function SkillList(props: TSkillListProps) {
               key={`category-${index}`}
               className="flex flex-row flex-wrap gap-2 my-2"
             >
-              <p className="w-full text-1xl text-gray-400 font-bold mb-4">
+              <p className="w-full text-1xl dark:text-gray-400 text-gray-600 font-bold mb-4">
                 {title}
               </p>
               {items?.map((item: TSkillItem, id: number) => (
