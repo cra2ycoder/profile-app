@@ -16,7 +16,7 @@ export default async function Awards() {
   ).then(res => res.json())) || { data: [] }
 
   return (
-    <div className="w-full flex gap-4 lg:flex-col sm:flex-row mb-10 flex-wrap">
+    <div className="w-full flex lg:flex-col sm:flex-row mb-10 flex-wrap">
       <Title text="Professional Recognition" />
       <div className="w-full gap-y-8 flex flex-wrap mt-6">
         {apiResponse.data.map((awards: TAwardItem, index: number) => {

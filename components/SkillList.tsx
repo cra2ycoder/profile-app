@@ -59,25 +59,25 @@ export default async function SkillList(props: TSkillListProps) {
           const { title, items } = data || {}
 
           return (
-            <div
-              key={`category-${index}`}
-              className="flex flex-row flex-wrap gap-2 my-2"
-            >
+            <div key={`category-${index}`} className="flex flex-row flex-wrap">
               <p className="w-full text-1xl dark:text-gray-400 text-gray-600 font-bold mb-4">
                 {title}
               </p>
               {items?.map((item: TSkillItem, id: number) => (
                 <div
-                  key={id}
-                  className="flex flex-row w-12 h-12 items-center mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden p-2 justify-center items-center"
+                  className="flex flex-row items-center justify-center p-2"
+                  key={`skill-${id}`}
                 >
-                  <Image
-                    src={item.logo}
-                    alt={`tool-logo-${item.name}`}
-                    className="overflow-hidden"
-                    width={12 * 16}
-                    height={12 * 16}
-                  />
+                  <div className="flex flex-row w-12 h-12 mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden p-2 justify-center items-center">
+                    <Image
+                      src={item.logo}
+                      alt={`tool-logo-${item.name}`}
+                      className="overflow-hidden"
+                      width={12 * 16}
+                      height={12 * 16}
+                    />
+                  </div>
+                  {/* <p className="text-sm text-gray-400 mt-2">{item.name}</p> */}
                 </div>
               ))}
             </div>

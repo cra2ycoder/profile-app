@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { parseCSS } from '@/utils'
 import ContactInfo from './ContactInfo'
+import SocialAccounts from './SocialAccounts'
+import DownloadCV from './DownloadCV'
 
 type TUserInfo = {
   data: {
@@ -57,6 +59,11 @@ export default async function UserInfo() {
           className="text-2xl tracking-tight font-light dark:text-gray-400 text-gray-600 my-4"
           dangerouslySetInnerHTML={{ __html: apiResponse.data.description }}
         />
+      </div>
+      <div className="flex flex-row gap-4 items-center my-10">
+        <DownloadCV />
+        <div className="border-gray-600 border-r h-full" />
+        <SocialAccounts />
       </div>
     </>
   )

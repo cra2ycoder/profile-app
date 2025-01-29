@@ -26,7 +26,7 @@ const menus: TMenuItem[] = [
 
 export default function SideNav() {
   return (
-    <div className="h-full m-auto flex flex-col fixed z-10 max-xl:hidden">
+    <nav className="h-full m-auto flex flex-col fixed z-10 max-xl:hidden">
       <ol className="flex flex-col gap-4 h-[50%] justify-evenly">
         {menus.map((menu: TMenuItem, index: number) => (
           <li
@@ -34,10 +34,12 @@ export default function SideNav() {
             className="flex items-center gap-2 cursor-pointer drop-shadow-md"
           >
             <menu.icon />
-            {/* <span>{menu.name}</span> */}
+            {/* <span className="text-slate-900 dark:text-gray-100">
+              {menu.name}
+            </span> */}
           </li>
         ))}
       </ol>
-    </div>
+    </nav>
   )
 }

@@ -22,7 +22,7 @@ export default async function WorkExperience() {
   ).then(res => res.json())) || { data: [] }
 
   return (
-    <div className="w-full flex gap-4 flex-col mb-10">
+    <div className="w-full flex flex-col mb-10">
       <Title text="Companies I’ve Worked With" />
       <div className="flex flex-row gap-10 w-[100%] mt-6 flex-wrap">
         {apiResponse.data?.map((company: TWorkItem, index: number) => {
@@ -32,7 +32,7 @@ export default async function WorkExperience() {
               key={`company-${index}`}
             >
               <div className="flex flex-row gap-2 items-center">
-                <div className="flex flex-row w-20 h-20 items-center mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden p-3 justify-center items-center overflow-hidden">
+                <div className="flex flex-row w-20 h-20 mr-2 flex-wrap drop-shadow-md bg-white rounded-full p-3 justify-center items-center overflow-hidden">
                   <Image
                     src={company.logo}
                     alt={`company-logo-${company.name}`}
@@ -51,7 +51,7 @@ export default async function WorkExperience() {
                   </p>
                 </div>
               </div>
-              <ol className="flex gap-3 flex-col mt-6 list-disc max-w-3xl lg:pl-[6rem]">
+              <ol className="flex gap-3 flex-col mt-6 list-none max-w-3xl lg:pl-[0rem]">
                 {company.responsibilities?.map((x: string, index: number) => (
                   <li
                     key={`resp-${index}`}
