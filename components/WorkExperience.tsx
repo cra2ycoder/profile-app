@@ -58,7 +58,7 @@ export default async function WorkExperience() {
                   (resp: string, index: number) => (
                     <li
                       key={`resp-${index}`}
-                      className="font-[Inter] text-md dark:text-gray-400 text-gray-700"
+                      className="font-[Inter] text-md dark:text-gray-400 text-gray-600"
                       dangerouslySetInnerHTML={{ __html: resp }}
                     />
                   )

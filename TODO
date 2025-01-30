@@ -13,9 +13,11 @@
 - [ ] when hover on the skill tool icons that should show the tool/lib name
 - [ ] Experience to be corrected (may be)
 - [x] Fonts cleanup for sharp and smooth looking`
-- [ ] update your deployed link at the `LinkedIn` and `Github`
+- [x] update your deployed link at the `LinkedIn` and `Github`
 - [-] quick menus on the left side with mobile support
+  - [ ] scroll to section when click
 - [x] all svg icons moving to single file
 - [x] BGIcons file name changing to Icons
 - [x] env introducing
 - [x] google font replacing with `next/font/google` instead of link tags
+- [x] client details adding
