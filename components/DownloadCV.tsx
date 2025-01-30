@@ -14,7 +14,7 @@ export default function DownloadCV() {
       href="https://cra2ycoder.sirv.com/mohanraj_profile.pdf"
       download
     >
-      <button className="">Download CV</button>
+      <button className="text-lg px-3">Download CV</button>
     </a>
   )
 }

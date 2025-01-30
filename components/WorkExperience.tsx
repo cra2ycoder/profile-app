@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import Image from 'next/image'
 import Title from './Title'
 
@@ -10,6 +11,7 @@ type TWorkItem = {
   styles?: {
     [key: string]: string
   }
+  clients?: string[]
 }
 
 type TWorkList = {
@@ -51,15 +53,33 @@ export default async function WorkExperience() {
                   </p>
                 </div>
               </div>
-              <ol className="flex gap-3 flex-col mt-6 list-none max-w-3xl lg:pl-[0rem]">
-                {company.responsibilities?.map((x: string, index: number) => (
-                  <li
-                    key={`resp-${index}`}
-                    className="font-[Inter] text-md dark:text-gray-400 text-gray-700"
-                    dangerouslySetInnerHTML={{ __html: x }}
-                  />
-                ))}
+              <ol className="flex gap-3 flex-col mt-6 list-none max-w-3xl">
+                {company.responsibilities?.map(
+                  (resp: string, index: number) => (
+                    <li
+                      key={`resp-${index}`}
+                      className="font-[Inter] text-md dark:text-gray-400 text-gray-700"
+                      dangerouslySetInnerHTML={{ __html: resp }}
+                    />
+                  )
+                )}
               </ol>
+              {company.clients && (
+                <ol className="flex gap-3 flex-row mt-6 list-none max-w-3xl items-center">
+                  {company.clients?.map((client: string, index: number) => (
+                    <Fragment key={`client-${index}`}>
+                      <li className="dark:text-gray-300 text-gray-400 font-extrabold text-[0.9rem] py-2">
+                        {client}
+                      </li>
+                      {index < company.clients?.length - 1 && (
+                        <div className="dark:text-gray-800 text-gray-400">
+                          |
+                        </div>
+                      )}
+                    </Fragment>
+                  ))}
+                </ol>
+              )}
             </div>
           )
         })}
