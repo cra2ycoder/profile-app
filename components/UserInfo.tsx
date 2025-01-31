@@ -37,7 +37,7 @@ export default async function UserInfo() {
     <>
       <div className={parseCSS(themeClass)} />
       <div className="flex flex-row flex-wrap gap-6 mb-6 items-center">
-        <div className="rounded-full w-[150px] h-[150px] overflow-hidden drop-shadow-lg border-white border-4">
+        <div className="w-[150px] h-[150px] overflow-hidden">
           <Image
             src="https://cra2ycoder.sirv.com/mohaa_4.jpeg"
             alt="profile picture"

@@ -52,7 +52,7 @@ export default async function SkillList(props: TSkillListProps) {
 
   return (
     <div className="w-full flex gap-4 flex-col mb-10">
-      <Title text="Skills I've Developed" />
+      <Title id="skills" text="Skills I've Developed" />
       <div className="flex flex-row flex-wrap gap-3">
         {filterBy.map((x: TSkillFilterItem, index: number) => {
           const data = filteredData[x.filterKey]

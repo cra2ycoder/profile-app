@@ -28,6 +28,15 @@ const menus: TMenuItem[] = [
 ]
 
 export default function SideNav() {
+  const scrollToFocus = (menuName: string) => {
+    const scrollHeading = document.getElementById(menuName)
+
+    window.scrollTo({
+      top: (scrollHeading?.offsetTop || 0) - 30,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <nav className="h-full m-auto flex flex-col fixed z-10 max-xl:hidden">
       <ol className="flex flex-col gap-4 h-[50%] justify-evenly">
@@ -55,7 +64,10 @@ export default function SideNav() {
           return (
             <li
               key={`side-nav-menu-${index}`}
-              className="flex items-center gap-2 cursor-pointer drop-shadow-md transition-all"
+              className="flex items-center gap-2 cursor-pointer drop-shadow-md"
+              onClick={() => {
+                scrollToFocus(menu.name)
+              }}
             >
               <motion.div
                 initial="initial"

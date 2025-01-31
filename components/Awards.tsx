@@ -17,7 +17,7 @@ export default async function Awards() {
 
   return (
     <div className="w-full flex lg:flex-col sm:flex-row mb-10 flex-wrap">
-      <Title text="Professional Recognition" />
+      <Title id="awards" text="Professional Recognition" />
       <div className="w-full gap-y-8 flex flex-wrap mt-6">
         {apiResponse.data.map((awards: TAwardItem, index: number) => {
           return (

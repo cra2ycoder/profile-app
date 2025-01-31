@@ -24,7 +24,7 @@ export default function Index() {
           ]}
         />
         <Awards />
-        <Title text="What I Enjoy in My Free Time" />
+        <Title id="arts" text="What I Enjoy in My Free Time" />
       </AppLayout>
       <ArtWorks />
       <Footer />

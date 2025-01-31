@@ -1,7 +1,10 @@
+'use client'
+
 import { parseCSS } from '@/utils'
 
 type TTitleProps = {
   text: string
+  id: string
 }
 
 export default function Title(props: TTitleProps) {
@@ -12,5 +15,9 @@ export default function Title(props: TTitleProps) {
     light: 'from-blue-600 to-blue-950',
   }
 
-  return <h2 className={parseCSS(themeClass)}>{props.text}</h2>
+  return (
+    <h2 className={parseCSS(themeClass)} id={props.id}>
+      {props.text}
+    </h2>
+  )
 }

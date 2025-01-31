@@ -14,8 +14,8 @@
 - [ ] Experience to be corrected (may be)
 - [x] Fonts cleanup for sharp and smooth looking`
 - [x] update your deployed link at the `LinkedIn` and `Github`
-- [-] quick menus on the left side with mobile support
-  - [ ] scroll to section when click
+- [x] quick menus on the left side with mobile support
+  - [x] scroll to section when click
 - [x] all svg icons moving to single file
 - [x] BGIcons file name changing to Icons
 - [x] env introducing
