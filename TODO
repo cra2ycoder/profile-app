@@ -4,14 +4,14 @@
 - [x] Dark and light theme icon adding on the top corner
 - [x] Dark and Light theme implementations
 - [x] Download CV button functionality
-  - [ ] Dependency: ensure you have the latest resume uploaded at the `sirv`
-- [ ] Animations
+  - [x] Dependency: ensure you have the latest resume uploaded at the `sirv`
+- [x] Animations
 - [x] `next/image` integration for all the images toa avoid build failures
 - [x] must typings
 - [x] Deploy at vercel and keep updating the latest
 - [x] Footer Date should be with latest year always
 - [ ] when hover on the skill tool icons that should show the tool/lib name
-- [ ] Experience to be corrected (may be)
+- [x] Experience to be corrected (may be)
 - [x] Fonts cleanup for sharp and smooth looking`
 - [x] update your deployed link at the `LinkedIn` and `Github`
 - [x] quick menus on the left side with mobile support

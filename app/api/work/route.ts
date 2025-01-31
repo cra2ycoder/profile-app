@@ -10,7 +10,7 @@ export async function GET() {
           logo: 'https://cra2ycoder.sirv.com//logos/logo_infy.jpg',
           name: 'Infosys Equinox',
           role: 'Architect EQ',
-          duration: 'present - 2019',
+          duration: 'present - 2018',
           responsibilities: [
             'Leading a development team to build interactive, dynamic, and scalable web applications using a modern tech stack: <span class="dark:text-white text-black font-bold">JavaScript (ES6+), React.js with Hooks, TypeScript, Next.js, HTML5, CSS3, and tools like TanStack React Query, Express.js, i18next, Webpack, Storybook, and Docsify.</span>',
             'Designing and implementing <span class="dark:text-white text-black font-bold">Micro-Frontend (MFE) architecture</span> for modular and scalable web applications.',
@@ -34,7 +34,7 @@ export async function GET() {
           logo: 'https://cra2ycoder.sirv.com//logos/logo_skava.png',
           name: 'Skava an Infosys',
           role: 'Creative Manager',
-          duration: '2009 - 2019',
+          duration: '2009 - 2017',
           responsibilities: [
             'Leading a design team to craft professional <span class="dark:text-white text-black font-bold">User Interfaces (UI)</span> and deliver exceptional <span class="dark:text-white text-black font-bold">User experiences (UX)</span> for web applications and mobile apps, leveraging tools like <span class="dark:text-white text-black font-bold">Adobe Photoshop, Sketch, Adobe XD, and Figma.</span>',
             'Designing <span class="dark:text-white text-black font-bold">UI/UX components</span> following the <span class="dark:text-white text-black font-bold">Atomic Design Methodology</span> for consistency and scalability.',
