@@ -1,3 +1,4 @@
+import { AnimButtonWrapper } from './TransitionWrapper'
 import { ArtIcon, CertificateIcon, BuildingIcon, DesktopIcon } from './Icons'
 
 type TMenuItem = {
@@ -29,15 +30,14 @@ export default function SideNav() {
     <nav className="h-full m-auto flex flex-col fixed z-10 max-xl:hidden">
       <ol className="flex flex-col gap-4 h-[50%] justify-evenly">
         {menus.map((menu: TMenuItem, index: number) => (
-          <li
-            key={`side-nav-menu-${index}`}
-            className="flex items-center gap-2 cursor-pointer drop-shadow-md"
-          >
-            <menu.icon />
-            {/* <span className="text-slate-900 dark:text-gray-100">
-              {menu.name}
-            </span> */}
-          </li>
+          <AnimButtonWrapper key={`side-nav-menu-${index}`} size="lg">
+            <li className="flex items-center gap-2 cursor-pointer drop-shadow-md transition-all">
+              <menu.icon />
+              <span className="text-slate-900 dark:text-gray-100 transition-all">
+                {menu.name}
+              </span>
+            </li>
+          </AnimButtonWrapper>
         ))}
       </ol>
     </nav>
