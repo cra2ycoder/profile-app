@@ -25,7 +25,7 @@ export default async function WorkExperience() {
 
   return (
     <div className="w-full flex flex-col mb-10">
-      <Title text="Companies I’ve Worked With" />
+      <Title id="works" text="Companies I’ve Worked With" />
       <div className="flex flex-row gap-10 w-[100%] mt-6 flex-wrap">
         {apiResponse.data?.map((company: TWorkItem, index: number) => {
           const {
