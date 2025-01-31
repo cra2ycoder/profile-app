@@ -1,5 +1,6 @@
 'use client'
 
+import { AnimButtonWrapper } from './TransitionWrapper'
 import { useState, useEffect } from 'react'
 import { SunOutlinedIcon, SunFilledIcon } from './Icons'
 
@@ -13,15 +14,16 @@ export default function ThemeToggler() {
 
   return (
     <div className="fixed right-[4rem] top-[4rem] cursor-pointer w-[24px] h-[24px] items-center flex">
-      <div
-        className="absolute left-0"
-        onClick={() => {
-          setDarkThemeStatus(!darkThemeStatus)
-        }}
-      >
-        {darkThemeStatus && <SunFilledIcon />}
-        {!darkThemeStatus && <SunOutlinedIcon />}
-      </div>
+      <AnimButtonWrapper size="lg">
+        <div
+          onClick={() => {
+            setDarkThemeStatus(!darkThemeStatus)
+          }}
+        >
+          {darkThemeStatus && <SunFilledIcon />}
+          {!darkThemeStatus && <SunOutlinedIcon />}
+        </div>
+      </AnimButtonWrapper>
     </div>
   )
 }

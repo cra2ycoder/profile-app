@@ -5,6 +5,7 @@ import { motion } from 'motion/react'
 type AnimationProps = {
   children: React.ReactNode
   size?: 'sm' | 'md' | 'lg' | 'xl'
+  className?: string
 }
 
 export function AnimButtonWrapper(props: AnimationProps) {
@@ -22,7 +23,7 @@ export function AnimButtonWrapper(props: AnimationProps) {
       }}
       whileTap={{
         scale: 1 + scaleSize[props.size || 'md'] * 0.1,
-        opacity: 0.4,
+        opacity: 0.5,
       }}
     >
       {props.children}

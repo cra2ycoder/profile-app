@@ -4,7 +4,7 @@ import { LinkedInIcon, GithubIcon, CodeSandboxIcon } from './Icons'
 export default function SocialAccounts() {
   return (
     <div className="flex flex-row gap-5 align-center">
-      <AnimButtonWrapper size="lg">
+      <AnimButtonWrapper size="xl">
         <a
           href="https://www.linkedin.com/in/mohanraj-rangasamy-b15b7125/"
           target="_blank"
@@ -14,7 +14,7 @@ export default function SocialAccounts() {
           <LinkedInIcon />
         </a>
       </AnimButtonWrapper>
-      <AnimButtonWrapper size="lg">
+      <AnimButtonWrapper size="xl">
         <a
           href="https://github.com/cra2ycoder"
           target="_blank"
@@ -23,7 +23,7 @@ export default function SocialAccounts() {
           <GithubIcon />
         </a>
       </AnimButtonWrapper>
-      <AnimButtonWrapper size="lg">
+      <AnimButtonWrapper size="xl">
         <a
           href="https://codesandbox.io/u/cra2ycoder"
           target="_blank"
