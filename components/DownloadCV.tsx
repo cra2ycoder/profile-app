@@ -13,7 +13,7 @@ export default function DownloadCV() {
     <AnimButtonWrapper size="md">
       <a
         className={parseCSS(themeClass)}
-        href="https://cra2ycoder.sirv.com/mohanraj_profile.pdf"
+        href="https://cra2ycoder.sirv.com/mohanraj.rangasamy_profile.pdf"
         download
       >
         <button>Download CV</button>
