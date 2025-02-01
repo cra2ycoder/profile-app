@@ -28,7 +28,7 @@ export default async function UserInfo() {
 
   const nameThemeClass = {
     default:
-      'text-6xl font-weight-400 font-[DM Sans] font-extrabold tracking-tight bg-gradient-to-r text-transparent bg-clip-text leading-normal',
+      'lg:text-6xl text-4xl sm:!leading-[5rem] sm:text-5xl mb-3 font-weight-400 font-[DM Sans] font-extrabold tracking-tighter bg-gradient-to-r text-transparent bg-clip-text transition-all',
     light: 'from-blue-600 to-blue-950',
     dark: 'dark:from-violet-600 dark:to-pink-600',
   }
@@ -36,8 +36,8 @@ export default async function UserInfo() {
   return (
     <>
       <div className={parseCSS(themeClass)} />
-      <div className="flex flex-row flex-wrap gap-6 mb-6 items-center">
-        <div className="w-[150px] h-[150px] overflow-hidden">
+      <div className="flex flex-row gap-6 mb-6 items-center md:flex-nowrap flex-wrap">
+        <div className="w-[150px] min-w-[150px] h-[150px] overflow-hidden">
           <Image
             src="https://cra2ycoder.sirv.com/mohaa_4.jpeg"
             alt="profile picture"
@@ -45,7 +45,7 @@ export default async function UserInfo() {
             height={150}
           />
         </div>
-        <div>
+        <div className="flex flex-col">
           <h1 className={parseCSS(nameThemeClass)}>{apiResponse.data.name}</h1>
           <ContactInfo
             phone={apiResponse.data.phoneNumber}
@@ -54,9 +54,9 @@ export default async function UserInfo() {
           />
         </div>
       </div>
-      <div className="flex justify-center flex-col gap-2 w-100 w-full">
+      <div className="flex justify-center flex-col gap-2 w-100">
         <p
-          className="text-2xl tracking-tight font-light dark:text-gray-400 text-gray-600 my-4"
+          className="md:text-2xl text-xl tracking-tight font-light dark:text-gray-400 text-gray-600 my-4"
           dangerouslySetInnerHTML={{ __html: apiResponse.data.description }}
         />
       </div>

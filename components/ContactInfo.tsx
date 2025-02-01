@@ -13,7 +13,7 @@ export default function ContactInfo(props: TContactInfo) {
         <PhoneIcon />
         <p>{props.phone}</p>
       </div>
-      <div className="text-gray-600">|</div>
+      <div className="text-gray-600 invisible sm:visible">|</div>
       <a
         className="flex flex-row dark:text-gray-500 text-gray-800 gap-2"
         href={`mailto:${props.email}`}
