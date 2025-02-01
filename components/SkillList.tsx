@@ -68,7 +68,7 @@ export default async function SkillList(props: TSkillListProps) {
               </p>
               {items?.map((item: TSkillItem, id: number) => (
                 <div
-                  className="flex flex-row items-center justify-start p-2 flex-grow sm:flex-grow-0 overflow-hidden"
+                  className="flex flex-row items-center justify-start p-2 flex-grow sm:flex-grow-0 overflow-hidden max-w-[78px]"
                   key={`skill-${id}`}
                 >
                   <div className="flex flex-row w-12 h-12 mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden justify-center items-center">
