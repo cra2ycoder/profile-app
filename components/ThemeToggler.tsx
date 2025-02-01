@@ -13,7 +13,7 @@ export default function ThemeToggler() {
   }, [darkThemeStatus])
 
   return (
-    <div className="absolute sm:fixed md:right-[4rem] right-[2rem] top-[4rem] cursor-pointer w-[24px] h-[24px] items-center flex">
+    <div className="absolute sm:fixed md:right-[4rem] right-[2rem] sm:top-[4rem] top-[3rem] cursor-pointer w-[24px] h-[24px] items-center flex">
       <AnimButtonWrapper size="lg">
         <div
           onClick={() => {
