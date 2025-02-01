@@ -18,6 +18,7 @@ export function AnimButtonWrapper(props: AnimationProps) {
 
   return (
     <motion.div
+      className={props.className}
       whileHover={{
         scale: scaleSize[props.size || 'md'],
       }}

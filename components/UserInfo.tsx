@@ -60,9 +60,9 @@ export default async function UserInfo() {
           dangerouslySetInnerHTML={{ __html: apiResponse.data.description }}
         />
       </div>
-      <div className="flex flex-row gap-4 items-center my-10">
+      <div className="flex flex-row gap-4 items-center my-10 flex-wrap sm:justify-start justify-center">
         <DownloadCV />
-        <div className="border-gray-600 border-r h-full" />
+        {/* <div className="border-gray-600 border-r h-full" /> */}
         <SocialAccounts />
       </div>
     </>
