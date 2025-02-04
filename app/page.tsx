@@ -12,7 +12,7 @@ import ArtWorks from '@/components/ArtWorks'
 export default function Index() {
   return (
     <>
-      <SideNav />
+      {/* <SideNav /> */}
       <ThemeToggler />
       <AppLayout>
         <UserInfo />
