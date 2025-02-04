@@ -14,7 +14,6 @@ type ViewAnimationProps = {
   className?: string
   delay?: number
   directions?: 'left-to-right' | 'bottom-to-top' | 'zoomout-to-zoomin'
-  [key: string]: any
 }
 
 export function AnimButtonWrapper(props: AnimationProps) {
