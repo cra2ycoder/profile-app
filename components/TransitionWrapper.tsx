@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
-import * as ReactMotion from 'motion/react-client'
+// import * as ReactMotion from 'motion/react-client'
 
 type AnimationProps = {
   children: React.ReactNode
