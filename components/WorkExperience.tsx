@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import Image from 'next/image'
 import Title from './Title'
+import { ViewAnimationWrapper } from './TransitionWrapper'
 
 type TWorkItem = {
   logo: string
@@ -44,49 +45,56 @@ export default async function WorkExperience() {
               key={`company-${index}`}
             >
               <div className="flex flex-row gap-2 items-center">
-                <div className="flex flex-row w-20 h-20 mr-2 flex-wrap drop-shadow-md bg-white rounded-full p-3 justify-center items-center overflow-hidden">
-                  <Image
-                    src={logo}
-                    alt={`company-logo-${name}`}
-                    className="overflow-hidden"
-                    style={styles || {}}
-                    width={80}
-                    height={80}
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <h3 className="dark:text-gray-200 text-gray-900 font-bold text-2xl font-[DM Sans]">
-                    {name}
-                  </h3>
-                  <p className="text-gray-500">
-                    {role} | {duration}
-                  </p>
-                </div>
+                <ViewAnimationWrapper directions="zoomout-to-zoomin">
+                  <div className="flex flex-row w-20 h-20 mr-2 flex-wrap drop-shadow-md bg-white rounded-full p-3 justify-center items-center overflow-hidden">
+                    <Image
+                      src={logo}
+                      alt={`company-logo-${name}`}
+                      className="overflow-hidden"
+                      style={styles || {}}
+                      width={80}
+                      height={80}
+                    />
+                  </div>
+                </ViewAnimationWrapper>
+                <ViewAnimationWrapper delay={0.25}>
+                  <div className="flex flex-col gap-2">
+                    <h3 className="dark:text-gray-200 text-gray-900 font-bold text-2xl font-[DM Sans]">
+                      {name}
+                    </h3>
+                    <p className="text-gray-500">
+                      {role} | {duration}
+                    </p>
+                  </div>
+                </ViewAnimationWrapper>
               </div>
               <ol className="flex gap-3 flex-col mt-6 sm:list-disc max-w-4xl sm:pl-12">
                 {responsibilities?.map((resp: string, index: number) => (
-                  <li
-                    key={`resp-${index}`}
-                    className="text-md dark:text-gray-400 text-gray-600"
-                    dangerouslySetInnerHTML={{ __html: resp }}
-                  />
+                  <ViewAnimationWrapper key={`resp-${index}`} delay={0.2}>
+                    <li
+                      className="text-md dark:text-gray-400 text-gray-600"
+                      dangerouslySetInnerHTML={{ __html: resp }}
+                    />
+                  </ViewAnimationWrapper>
                 ))}
               </ol>
               {clients && (
-                <ol className="flex flex-row gap-3 mt-6 list-none max-w-3xl items-center flex-wrap">
-                  {clients?.map((client: string, index: number) => (
-                    <Fragment key={`client-${index}`}>
-                      <li className="dark:text-gray-300 text-gray-400 font-extrabold text-[0.9rem]">
-                        {client}
-                        {index < clients.length - 1 && (
-                          <span className="text-sm dark:text-gray-100 text-gray-400 ml-3">
-                            |
-                          </span>
-                        )}
-                      </li>
-                    </Fragment>
-                  ))}
-                </ol>
+                <ViewAnimationWrapper delay={0.3}>
+                  <ol className="flex flex-row gap-3 mt-6 list-none max-w-3xl items-center flex-wrap">
+                    {clients?.map((client: string, index: number) => (
+                      <Fragment key={`client-${index}`}>
+                        <li className="dark:text-gray-300 text-gray-400 font-extrabold text-[0.9rem]">
+                          {client}
+                          {index < clients.length - 1 && (
+                            <span className="text-sm dark:text-gray-100 text-gray-400 ml-3">
+                              |
+                            </span>
+                          )}
+                        </li>
+                      </Fragment>
+                    ))}
+                  </ol>
+                </ViewAnimationWrapper>
               )}
             </div>
           )

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { ViewAnimationWrapper } from './TransitionWrapper'
 
 type TArtWorkProps = {
   data: string[]
@@ -14,22 +15,26 @@ export default async function ArtWorks() {
       <div className="flex flex-row gap-10 no-wrap snap-x snap-mandatory overflow-x-auto overflow-y-hidden pb-10 transform-3d">
         {apiResponse.data.map((photo: string, index: number) => {
           return (
-            <div
+            <ViewAnimationWrapper
               key={`artwork-${index}`}
-              className={`flex shrink-0 snap-center sm:w-[300px] sm:h-[400px] w-[200px] h-[200px] rounded-3xl overflow-hidden origin-bottom-left relative drop-shadow-xl ${
-                index % 2 === 0
-                  ? 'sm:translate-y-12 rotate-2'
-                  : 'sm:-translate-y-4 -rotate-2'
-              }`}
+              delay={0.2 + index * 0.001}
             >
-              <Image
-                src={photo}
-                alt={`photo-${index}`}
-                className="aspect-ratio-auto"
-                fill={true}
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
+              <div
+                className={`flex shrink-0 snap-center sm:w-[300px] sm:h-[400px] w-[200px] h-[200px] rounded-3xl overflow-hidden origin-bottom-left relative drop-shadow-xl ${
+                  index % 2 === 0
+                    ? 'sm:translate-y-12 rotate-2'
+                    : 'sm:-translate-y-4 -rotate-2'
+                }`}
+              >
+                <Image
+                  src={photo}
+                  alt={`photo-${index}`}
+                  className="aspect-ratio-auto"
+                  fill={true}
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </ViewAnimationWrapper>
           )
         })}
       </div>

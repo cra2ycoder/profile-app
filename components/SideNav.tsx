@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react'
 import { ArtIcon, CertificateIcon, BuildingIcon, DesktopIcon } from './Icons'
+import { ViewAnimationWrapper } from './TransitionWrapper'
 
 type TMenuItem = {
   name: string
@@ -62,28 +63,33 @@ export default function SideNav() {
           }
 
           return (
-            <li
+            <ViewAnimationWrapper
               key={`side-nav-menu-${index}`}
-              className="flex items-center gap-2 cursor-pointer drop-shadow-md"
-              onClick={() => {
-                scrollToFocus(menu.name)
-              }}
+              delay={0.2 + index * 0.05}
+              directions="zoomout-to-zoomin"
             >
-              <motion.div
-                initial="initial"
-                whileHover="hover"
-                whileTap="initial"
-                variants={buttonVariants}
-                className="flex flex-row gap-2 items-center"
+              <li
+                className="flex items-center gap-2 cursor-pointer drop-shadow-md"
+                onClick={() => {
+                  scrollToFocus(menu.name)
+                }}
               >
-                <menu.icon />
-                <motion.div variants={textVariants}>
-                  <span className="text-slate-900 dark:text-gray-100 capitalize">
-                    {menu.name}
-                  </span>
+                <motion.div
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="initial"
+                  variants={buttonVariants}
+                  className="flex flex-row gap-2 items-center"
+                >
+                  <menu.icon />
+                  <motion.div variants={textVariants}>
+                    <span className="text-slate-900 dark:text-gray-100 capitalize">
+                      {menu.name}
+                    </span>
+                  </motion.div>
                 </motion.div>
-              </motion.div>
-            </li>
+              </li>
+            </ViewAnimationWrapper>
           )
         })}
       </ol>

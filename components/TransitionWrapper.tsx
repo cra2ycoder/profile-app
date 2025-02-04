@@ -13,6 +13,7 @@ type ViewAnimationProps = {
   children: React.ReactNode
   className?: string
   delay?: number
+  directions?: 'left-to-right' | 'bottom-to-top' | 'zoomout-to-zoomin'
   [key: string]: any
 }
 
@@ -41,12 +42,26 @@ export function AnimButtonWrapper(props: AnimationProps) {
 }
 
 export function ViewAnimationWrapper(props: ViewAnimationProps) {
+  const animationDirections = {
+    'left-to-right': {
+      initial: { opacity: 0, translateX: 25 },
+      whileInView: { opacity: 1, translateX: 0 },
+    },
+    'bottom-to-top': {
+      initial: { opacity: 0, translateY: 25 },
+      whileInView: { opacity: 1, translateY: 0 },
+    },
+    'zoomout-to-zoomin': {
+      initial: { opacity: 0, scale: 0.8 },
+      whileInView: { opacity: 1, scale: 1 },
+    },
+  }
+
   return (
     <motion.div
       className={props.className}
-      initial={{ opacity: 0, translateY: 25 }}
-      whileInView={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.65, ease: 'anticipate', delay: props.delay }}
+      {...animationDirections[props.directions || 'bottom-to-top']}
     >
       {props.children}
     </motion.div>
