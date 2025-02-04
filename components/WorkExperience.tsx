@@ -63,11 +63,11 @@ export default async function WorkExperience() {
                   </p>
                 </div>
               </div>
-              <ol className="flex gap-3 flex-col mt-6 list-none max-w-3xl">
+              <ol className="flex gap-3 flex-col mt-6 sm:list-disc max-w-4xl sm:pl-12">
                 {responsibilities?.map((resp: string, index: number) => (
                   <li
                     key={`resp-${index}`}
-                    className="font-[Inter] text-md dark:text-gray-400 text-gray-600"
+                    className="text-md dark:text-gray-400 text-gray-600"
                     dangerouslySetInnerHTML={{ __html: resp }}
                   />
                 ))}

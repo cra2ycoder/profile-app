@@ -3,6 +3,7 @@ import { parseCSS } from '@/utils'
 import ContactInfo from './ContactInfo'
 import SocialAccounts from './SocialAccounts'
 import DownloadCV from './DownloadCV'
+import { ViewAnimationWrapper } from './TransitionWrapper'
 
 type TUserInfo = {
   data: {
@@ -37,16 +38,22 @@ export default async function UserInfo() {
     <>
       <div className={parseCSS(themeClass)} />
       <div className="flex flex-row gap-6 mb-6 items-center md:flex-nowrap flex-wrap">
-        <div className="w-[150px] min-w-[150px] h-[150px] overflow-hidden">
-          <Image
-            src="https://cra2ycoder.sirv.com/mohaa_4.jpeg"
-            alt="profile picture"
-            width={150}
-            height={150}
-          />
-        </div>
+        <ViewAnimationWrapper delay={0}>
+          <div className="w-[150px] min-w-[150px] h-[150px] overflow-hidden">
+            <Image
+              src="https://cra2ycoder.sirv.com/mohaa_4.jpeg"
+              alt="profile picture"
+              width={150}
+              height={150}
+            />
+          </div>
+        </ViewAnimationWrapper>
         <div className="flex flex-col">
-          <h1 className={parseCSS(nameThemeClass)}>{apiResponse.data.name}</h1>
+          <ViewAnimationWrapper delay={0.2}>
+            <h1 className={parseCSS(nameThemeClass)}>
+              {apiResponse.data.name}
+            </h1>
+          </ViewAnimationWrapper>
           <ContactInfo
             phone={apiResponse.data.phoneNumber}
             email={apiResponse.data.email}
@@ -55,13 +62,18 @@ export default async function UserInfo() {
         </div>
       </div>
       <div className="flex justify-center flex-col gap-2 w-100">
-        <p
-          className="md:text-2xl text-xl tracking-tight font-light dark:text-gray-400 text-gray-600 my-4"
-          dangerouslySetInnerHTML={{ __html: apiResponse.data.description }}
-        />
+        <ViewAnimationWrapper delay={0.25}>
+          <p
+            className="md:text-2xl text-xl tracking-tight font-light dark:text-gray-400 text-gray-600 my-4"
+            dangerouslySetInnerHTML={{ __html: apiResponse.data.description }}
+          />
+        </ViewAnimationWrapper>
       </div>
       <div className="flex flex-row gap-4 items-center my-10 flex-wrap sm:justify-start justify-center">
-        <DownloadCV />
+        <ViewAnimationWrapper delay={0.2}>
+          <DownloadCV />
+        </ViewAnimationWrapper>
+
         {/* <div className="border-gray-600 border-r h-full" /> */}
         <SocialAccounts />
       </div>

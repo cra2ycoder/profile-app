@@ -1,6 +1,7 @@
 'use client'
 
 import { parseCSS } from '@/utils'
+import { ViewAnimationWrapper } from './TransitionWrapper'
 
 type TTitleProps = {
   text: string
@@ -16,8 +17,10 @@ export default function Title(props: TTitleProps) {
   }
 
   return (
-    <h2 className={parseCSS(themeClass)} id={props.id}>
-      {props.text}
-    </h2>
+    <ViewAnimationWrapper>
+      <h2 className={parseCSS(themeClass)} id={props.id}>
+        {props.text}
+      </h2>
+    </ViewAnimationWrapper>
   )
 }
