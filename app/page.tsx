@@ -16,13 +16,13 @@ export default function Index() {
       <ThemeToggler />
       <AppLayout>
         <UserInfo />
-        <WorkExperience />
         <SkillList
           filterBy={[
             { title: 'Technical Stacks', filterKey: 'tech' },
             { title: 'Design Tools', filterKey: 'design' },
           ]}
         />
+        <WorkExperience />
         <Awards />
         <Title id="arts" text="What I Enjoy in My Free Time" />
       </AppLayout>
