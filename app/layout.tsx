@@ -26,11 +26,21 @@ export default function RootLayout({
   const themeClass = {
     default: `${interFont.className} ${dmSansFont.className} sm:px-[2rem] px-[1rem] bg-gradient-to-b delay-150 duration-300 ease-in-out scroll-smooth`,
     dark: 'dark:from-gray-950 dark:via-black from-75% dark:to-slate-900 to-100%',
-    light: 'from-slate-100 from-75% to-zinc-50 to-100%',
+    light: 'from-slate-200 from-75% to-zinc-100 to-100%',
   }
 
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="description"
+          content="Mohanraj Rangasamy - Frontend Developer Portfolio"
+        />
+        <meta
+          name="keywords"
+          content="Web Developer, Full-Stack Developer, JavaScript/Typescript, React.js, Next.js, Node.js, Cypress"
+        />
+      </head>
       <body className={parseCSS(themeClass)}>{children}</body>
     </html>
   )
