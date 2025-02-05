@@ -68,13 +68,15 @@ export default async function WorkExperience() {
                   </div>
                 </ViewAnimationWrapper>
               </div>
-              <ol className="flex gap-3 flex-col mt-6 sm:list-disc max-w-4xl sm:pl-12">
+              <ol className="flex gap-3 flex-col mt-6 list-disc max-w-4xl sm:pl-12">
                 {responsibilities?.map((resp: string, index: number) => (
-                  <ViewAnimationWrapper key={`resp-${index}`} delay={0.2}>
-                    <li
-                      className="text-md dark:text-gray-400 text-gray-600"
-                      dangerouslySetInnerHTML={{ __html: resp }}
-                    />
+                  <ViewAnimationWrapper
+                    key={`resp-${index}`}
+                    tagName="li"
+                    delay={0.2}
+                    className="text-md dark:text-gray-400 text-gray-600"
+                  >
+                    <span dangerouslySetInnerHTML={{ __html: resp }} />
                   </ViewAnimationWrapper>
                 ))}
               </ol>
@@ -82,16 +84,17 @@ export default async function WorkExperience() {
                 <ViewAnimationWrapper delay={0.3}>
                   <ol className="flex flex-row gap-3 mt-6 list-none max-w-3xl items-center flex-wrap sm:pl-12">
                     {clients?.map((client: string, index: number) => (
-                      <Fragment key={`client-${index}`}>
-                        <li className="dark:text-gray-300 text-gray-400 font-extrabold text-[0.9rem]">
-                          {client}
-                          {index < clients.length - 1 && (
-                            <span className="text-sm dark:text-gray-100 text-gray-400 ml-3">
-                              |
-                            </span>
-                          )}
-                        </li>
-                      </Fragment>
+                      <li
+                        key={`client-${index}`}
+                        className="dark:text-gray-300 text-gray-400 font-extrabold text-[0.9rem]"
+                      >
+                        {client}
+                        {index < clients.length - 1 && (
+                          <span className="text-sm dark:text-gray-100 text-gray-400 ml-3">
+                            |
+                          </span>
+                        )}
+                      </li>
                     ))}
                   </ol>
                 </ViewAnimationWrapper>
