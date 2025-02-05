@@ -1,5 +1,5 @@
 import Title from '@/components/Title'
-import SideNav from '@/components/SideNav'
+// import SideNav from '@/components/SideNav'
 import AppLayout from '@/components/AppLayout'
 import Footer from '@/components/Footer'
 import ThemeToggler from '@/components/ThemeToggler'
