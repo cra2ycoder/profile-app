@@ -7,7 +7,7 @@ export default function SocialAccounts() {
       <ViewAnimationWrapper delay={0.3} directions="zoomout-to-zoomin">
         <AnimButtonWrapper size="xl">
           <a
-            href="https://www.linkedin.com/in/mohanraj-rangasamy-b15b7125/"
+            href="https://www.linkedin.com/in/mohanrajr-frontend-dev"
             target="_blank"
             aria-label="LinkedIn Account"
             className="w-[21px] overflow-hidden"
