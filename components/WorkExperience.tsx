@@ -80,7 +80,7 @@ export default async function WorkExperience() {
               </ol>
               {clients && (
                 <ViewAnimationWrapper delay={0.3}>
-                  <ol className="flex flex-row gap-3 mt-6 list-none max-w-3xl items-center flex-wrap">
+                  <ol className="flex flex-row gap-3 mt-6 list-none max-w-3xl items-center flex-wrap sm:pl-12">
                     {clients?.map((client: string, index: number) => (
                       <Fragment key={`client-${index}`}>
                         <li className="dark:text-gray-300 text-gray-400 font-extrabold text-[0.9rem]">
