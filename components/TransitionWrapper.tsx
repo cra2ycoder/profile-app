@@ -13,6 +13,7 @@ type ViewAnimationProps = {
   children: React.ReactNode
   className?: string
   delay?: number
+  tagName?: string
   directions?: 'left-to-right' | 'bottom-to-top' | 'zoomout-to-zoomin'
 }
 
@@ -41,6 +42,8 @@ export function AnimButtonWrapper(props: AnimationProps) {
 }
 
 export function ViewAnimationWrapper(props: ViewAnimationProps) {
+  let tagName = props.tagName || 'div'
+
   const animationDirections = {
     'left-to-right': {
       initial: { opacity: 0, translateX: 25 },
@@ -56,13 +59,17 @@ export function ViewAnimationWrapper(props: ViewAnimationProps) {
     },
   }
 
-  return (
-    <motion.div
-      className={props.className}
-      transition={{ duration: 0.65, ease: 'anticipate', delay: props.delay }}
-      {...animationDirections[props.directions || 'bottom-to-top']}
-    >
-      {props.children}
-    </motion.div>
-  )
+  const componentProps = {
+    className: props.className,
+    transition: { duration: 0.65, ease: 'anticipate', delay: props.delay },
+    ...animationDirections[props.directions || 'bottom-to-top'],
+  }
+
+  if (tagName === 'div') {
+    return <motion.div {...componentProps}>{props.children}</motion.div>
+  }
+
+  if (tagName === 'li') {
+    return <motion.li {...componentProps}>{props.children}</motion.li>
+  }
 }
