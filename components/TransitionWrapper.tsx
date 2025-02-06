@@ -42,7 +42,7 @@ export function AnimButtonWrapper(props: AnimationProps) {
 }
 
 export function ViewAnimationWrapper(props: ViewAnimationProps) {
-  let tagName = props.tagName || 'div'
+  const tagName = props.tagName || 'div'
 
   const animationDirections = {
     'left-to-right': {
