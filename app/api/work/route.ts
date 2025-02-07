@@ -13,7 +13,7 @@ export async function GET() {
           duration: 'present - 2018',
           responsibilities: [
             'Leading a development team to build interactive, dynamic, and scalable web applications using a modern tech stack: <span class="dark:text-white text-black font-bold">JavaScript (ES6+), React.js with Hooks, TypeScript, Next.js, HTML5, CSS3, and tools like TanStack React Query, Express.js, i18next, Webpack, Storybook, and Docsify.</span>',
-            'Designing and implementing <span class="dark:text-white text-black font-bold">Micro-Frontend (MFE) architecture</span> for modular and scalable web applications.',
+            'Designing and implementing <span class="dark:text-white text-black font-bold">Mono Repo and Micro-Frontend (MFE) based architecture with Turbo Repo</span> for modular and scalable web applications.',
             'Building UI/UX components following the <span class="dark:text-white text-black font-bold">Atomic Design Methodology</span>, ensuring consistency and reusability.',
             'Setting up CICD pipelines to streamline builds and deployments across multiple environments.',
             'Conducting daily stand-ups, pair programming, live coding sessions, and ensuring smooth collaboration among team members.',

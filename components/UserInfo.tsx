@@ -39,7 +39,7 @@ export default async function UserInfo() {
       <div className={parseCSS(themeClass)} />
       <div className="flex flex-row gap-6 mb-6 items-center md:flex-nowrap flex-wrap">
         <ViewAnimationWrapper delay={0}>
-          <div className="w-[150px] min-w-[150px] h-[150px] overflow-hidden">
+          <div className="w-[150px] min-w-[150px] h-[150px] overflow-hidden rounded-full border-white border-4 drop-shadow-md">
             <Image
               src="https://cra2ycoder.sirv.com/mohaa_4.jpeg"
               alt="profile picture"

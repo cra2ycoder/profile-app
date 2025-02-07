@@ -79,13 +79,13 @@ export default async function SkillList(props: TSkillListProps) {
                     directions="zoomout-to-zoomin"
                     className="flex"
                   >
-                    <div className="flex flex-row w-12 h-12 mr-2 flex-wrap drop-shadow-md bg-white rounded-full overflow-hidden justify-center items-center">
+                    <div className="flex flex-row w-16 h-16 mr-2 flex-wrap drop-shadow-md bg-white rounded-md overflow-hidden justify-center items-center p-2">
                       <Image
                         src={item.logo}
                         alt={`tool-logo-${item.name}`}
                         className="overflow-hidden"
-                        width={16 * 16}
-                        height={16 * 16}
+                        width={24 * 24}
+                        height={24 * 24}
                       />
                     </div>
                   </ViewAnimationWrapper>

@@ -77,16 +77,6 @@ export async function GET() {
           category: 'tech',
         },
         {
-          name: 'MobX',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_mobx.png',
-          category: 'tech',
-        },
-        {
-          name: 'JQuery',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_jquery.jpg',
-          category: 'tech',
-        },
-        {
           name: 'Tailwindcss',
           logo: 'https://cra2ycoder.sirv.com//logos/logo_tailwind.png',
           category: 'tech',
@@ -107,23 +97,8 @@ export async function GET() {
           category: 'tech',
         },
         {
-          name: 'MDB React',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_mdbreact.png',
-          category: 'tech',
-        },
-        {
-          name: 'React Bootstrap',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_reactbootstrap.png',
-          category: 'tech',
-        },
-        {
-          name: 'Webpack',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_webpack.png',
-          category: 'tech',
-        },
-        {
-          name: 'Rollup',
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_rollup.jpg',
+          name: 'MobX',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_mobx.png',
           category: 'tech',
         },
         {
@@ -137,8 +112,34 @@ export async function GET() {
           category: 'tech',
         },
         {
+          name: 'Webpack',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_webpack.png',
+          category: 'tech',
+        },
+        {
+          name: 'Rollup',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_rollup.jpg',
+          category: 'tech',
+        },
+
+        {
           name: 'Markdown',
           logo: 'https://cra2ycoder.sirv.com//logos/logo_md.png',
+          category: 'tech',
+        },
+        {
+          name: 'JQuery',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_jquery.jpg',
+          category: 'tech',
+        },
+        {
+          name: 'MDB React',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_mdbreact.png',
+          category: 'tech',
+        },
+        {
+          name: 'React Bootstrap',
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_reactbootstrap.png',
           category: 'tech',
         },
         {
