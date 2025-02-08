@@ -67,7 +67,7 @@ export default async function WorkExperience() {
                   </div>
                 </ViewAnimationWrapper>
               </div>
-              <ol className="flex gap-3 flex-col mt-6 list-disc max-w-4xl sm:pl-12">
+              <ol className="flex gap-3 flex-col mt-6 sm:list-disc max-w-4xl sm:pl-12">
                 {responsibilities?.map((resp: string, index: number) => (
                   <ViewAnimationWrapper
                     key={`resp-${index}`}
