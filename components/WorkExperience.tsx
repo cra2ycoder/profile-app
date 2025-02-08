@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import Image from 'next/image'
 import Title from './Title'
 import { ViewAnimationWrapper } from './TransitionWrapper'
