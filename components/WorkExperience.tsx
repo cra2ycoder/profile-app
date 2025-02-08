@@ -45,7 +45,7 @@ export default async function WorkExperience() {
             >
               <div className="flex flex-row gap-2 items-center">
                 <ViewAnimationWrapper directions="zoomout-to-zoomin">
-                  <div className="flex flex-row w-20 h-20 mr-2 flex-wrap drop-shadow-md bg-white rounded-full p-3 justify-center items-center overflow-hidden">
+                  <div className="flex flex-row w-20 h-20 mr-2 flex-wrap drop-shadow-md bg-white rounded-md p-3 justify-center items-center overflow-hidden">
                     <Image
                       src={logo}
                       alt={`company-logo-${name}`}
