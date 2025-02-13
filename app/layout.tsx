@@ -25,8 +25,8 @@ export default function RootLayout({
 }>) {
   const themeClass = {
     default: `${interFont.className} ${dmSansFont.className} sm:px-[2rem] px-[1rem] bg-gradient-to-b delay-150 duration-300 ease-in-out scroll-smooth`,
-    dark: 'dark:from-gray-950 dark:via-black from-75% dark:to-slate-900 to-100%',
-    light: 'from-slate-200 from-75% to-zinc-100 to-100%',
+    dark: 'dark:from-slate-900 dark:via-slate-950 from-75% dark:to-slate-900 to-40%',
+    light: 'from-slate-200 via-slate-100 from-40% to-slate-200 to-40%',
   }
 
   return (

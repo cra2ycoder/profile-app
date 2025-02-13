@@ -5,7 +5,7 @@ import { SunOutlinedIcon, SunFilledIcon } from './Icons'
 import { AnimButtonWrapper, ViewAnimationWrapper } from './TransitionWrapper'
 
 export default function ThemeToggler() {
-  const [darkThemeStatus, setDarkThemeStatus] = useState<boolean>(false)
+  const [darkThemeStatus, setDarkThemeStatus] = useState<boolean>(true)
 
   useEffect(() => {
     const htmlEl = document.querySelector('html')

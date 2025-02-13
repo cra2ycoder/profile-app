@@ -7,6 +7,12 @@ type AnimationProps = {
   children: React.ReactNode
   size?: 'sm' | 'md' | 'lg' | 'xl'
   className?: string
+  hoverStyles?: {
+    [key: string]: string
+  }
+  tapStyles?: {
+    [key: string]: string
+  }
 }
 
 type ViewAnimationProps = {
@@ -30,10 +36,12 @@ export function AnimButtonWrapper(props: AnimationProps) {
       className={props.className}
       whileHover={{
         scale: scaleSize[props.size || 'md'],
+        ...(props.hoverStyles || {}),
       }}
       whileTap={{
         scale: 1 + scaleSize[props.size || 'md'] * 0.1,
         opacity: 0.5,
+        ...(props.tapStyles || {}),
       }}
     >
       {props.children}

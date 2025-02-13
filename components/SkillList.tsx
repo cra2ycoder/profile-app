@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Title from './Title'
-import { ViewAnimationWrapper } from './TransitionWrapper'
+import { ViewAnimationWrapper, AnimButtonWrapper } from './TransitionWrapper'
 
 type TSkillFilterItem = {
   title: string
@@ -79,17 +79,19 @@ export default async function SkillList(props: TSkillListProps) {
                     directions="zoomout-to-zoomin"
                     className="flex"
                   >
-                    <div className="flex flex-row w-16 h-16 mr-2 flex-wrap drop-shadow-md bg-white rounded-md overflow-hidden justify-center items-center p-2">
-                      <Image
-                        src={item.logo}
-                        alt={`tool-logo-${item.name}`}
-                        className="overflow-hidden"
-                        width={24 * 24}
-                        height={24 * 24}
-                      />
-                    </div>
+                    <AnimButtonWrapper size="xl">
+                      <div className="flex flex-row w-16 h-16 mr-2 flex-wrap drop-shadow-md bg-white rounded-md overflow-hidden justify-center items-center p-2">
+                        <Image
+                          src={item.logo}
+                          alt={`tool-logo-${item.name}`}
+                          className="overflow-hidden"
+                          width={24 * 24}
+                          height={24 * 24}
+                        />
+                      </div>
+                    </AnimButtonWrapper>
                   </ViewAnimationWrapper>
-                  {/* <p className="text-sm text-gray-400 mt-2">{item.name}</p> */}
+                  <p className="text-sm text-gray-400 mt-2">{item.name}</p>
                 </div>
               ))}
             </div>
