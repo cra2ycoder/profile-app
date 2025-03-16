@@ -6,10 +6,15 @@ export function parseCSS(themeObj: TThemeObject) {
     .join(' ')
 }
 
-export function applyHighlight(content: string) {
+export function applyHighlight(
+  content: string,
+  skipUnderline: boolean = false
+) {
   let updatedContent = content.replaceAll(
     '<hlt>',
-    '<span class="dark:text-white text-black font-bold underline">'
+    `<span class="dark:text-white text-black font-bold ${
+      skipUnderline ? '' : 'underline'
+    }">`
   )
 
   updatedContent = updatedContent.replaceAll('</hlt>', '</span>')

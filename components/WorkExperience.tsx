@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Title from './Title'
+import { applyHighlight } from '@/utils'
 import { ViewAnimationWrapper } from './TransitionWrapper'
 
 type TWorkItem = {
@@ -75,7 +76,11 @@ export default async function WorkExperience() {
                     delay={0.2}
                     className="text-md dark:text-gray-400 text-gray-600"
                   >
-                    <span dangerouslySetInnerHTML={{ __html: resp }} />
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: applyHighlight(resp, true),
+                      }}
+                    />
                   </ViewAnimationWrapper>
                 ))}
               </ol>
