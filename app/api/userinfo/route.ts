@@ -2,18 +2,18 @@
 
 import { NextResponse } from 'next/server'
 
+// <span class="dark:text-white text-black font-bold underline ">
 export async function GET() {
   return NextResponse.json(
     {
       data: {
         name: 'Mohanraj Rangasamy',
-        description: `Front-End Developer with 7+ years of experience building responsive,
-          user-friendly websites in the recruiting industry. Proficient in <span class="dark:text-white text-black ml-1 font-bold underline">
-            HTML5, CSS3, JavaScript, TypeScript, Node.js, React.js, and Next.js
-          </span>, with a passion for creating seamless, accessible user experiences.
-          Skilled in Adobe Photoshop and XD, bridging design and development.
-          Dedicated to clean code, performance optimization, and staying ahead
-          of web development trends.`,
+        role: [
+          'Frontend Architect',
+          'JS / TS, Node.js, Next.js, React.js, React Query, Cypress',
+          'MFE',
+        ],
+        description: `Frontend Developer (7+ years) & UI/UX Designer (8 years) with extensive experience in building responsive, user-friendly web applications in the recruiting industry. Proficient in <hlt>JavaScript, TypeScript, Node.js, React.js, Next.js, and TanStack React Query</hlt>, with a strong focus on performance, accessibility, and seamless user experiences. Skilled in <hlt>Figma, Sketch, Adobe Photoshop, and XD</hlt>, bridging design and development. Passionate about clean code, optimization, and staying ahead of web development trends.`,
         phoneNumber: '+(91) 770 829 629 5',
         email: 'mohanraj.dev.6789@gmail.com',
         location: 'Bangalore, Karnataka',

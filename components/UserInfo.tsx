@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { parseCSS } from '@/utils'
+import { parseCSS, applyHighlight } from '@/utils'
 import ContactInfo from './ContactInfo'
 import SocialAccounts from './SocialAccounts'
 import DownloadCV from './DownloadCV'
@@ -8,6 +8,7 @@ import { ViewAnimationWrapper } from './TransitionWrapper'
 type TUserInfo = {
   data: {
     name: string
+    role: string[]
     description: string
     email: string
     phoneNumber: string
@@ -29,7 +30,7 @@ export default async function UserInfo() {
 
   const nameThemeClass = {
     default:
-      'lg:text-6xl text-4xl sm:!leading-[5rem] sm:text-5xl mb-3 font-weight-400 font-[DM Sans] font-extrabold tracking-tighter bg-gradient-to-r text-transparent bg-clip-text transition-all',
+      'lg:text-6xl text-4xl sm:!leading-[5rem] sm:text-5xl font-weight-400 font-[DM Sans] font-extrabold tracking-tighter bg-gradient-to-r text-transparent bg-clip-text transition-all',
     light: 'from-blue-600 to-blue-950',
     dark: 'dark:from-violet-600 dark:to-pink-600',
   }
@@ -54,6 +55,21 @@ export default async function UserInfo() {
               {apiResponse.data.name}
             </h1>
           </ViewAnimationWrapper>
+          <div className="flex items-center flex-wrap gap-2 mb-3">
+            {apiResponse.data.role &&
+              apiResponse.data.role.map((item: string, index: number) => {
+                return (
+                  <ViewAnimationWrapper
+                    key={`role-${index}`}
+                    delay={0.2}
+                    className="flex gap-2 text-lg dark:text-white text-gray-600"
+                  >
+                    {index > 0 && <div>|</div>}
+                    <p>{item}</p>
+                  </ViewAnimationWrapper>
+                )
+              })}
+          </div>
           <ContactInfo
             phone={apiResponse.data.phoneNumber}
             email={apiResponse.data.email}
@@ -65,7 +81,9 @@ export default async function UserInfo() {
         <ViewAnimationWrapper delay={0.25}>
           <p
             className="md:text-2xl text-xl tracking-tight font-light dark:text-gray-400 text-gray-600 my-4"
-            dangerouslySetInnerHTML={{ __html: apiResponse.data.description }}
+            dangerouslySetInnerHTML={{
+              __html: applyHighlight(apiResponse.data.description),
+            }}
           />
         </ViewAnimationWrapper>
       </div>

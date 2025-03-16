@@ -26,8 +26,9 @@ export default function ContactInfo(props: TContactInfo) {
           <p>{props.email}</p>
         </a>
       </ViewAnimationWrapper>
-      <ViewAnimationWrapper delay={0.4} className="w-full">
-        <p className="w-full dark:text-gray-400 text-gray-500">
+      <ViewAnimationWrapper delay={0.4} className="flex gap-2">
+        <div className="text-gray-600 invisible sm:visible">|</div>
+        <p className="dark:text-gray-500 text-gray-800">
           Location: {props.location}
         </p>
       </ViewAnimationWrapper>
