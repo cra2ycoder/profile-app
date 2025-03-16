@@ -18,7 +18,13 @@ export default function Index() {
         <UserInfo />
         <SkillList
           filterBy={[
-            { title: 'Technical Stacks', filterKey: 'tech' },
+            { title: 'Programming Languages', filterKey: 'languages' },
+            {
+              title: 'Frontend and Backend Frameworks/Libraries',
+              filterKey: 'fb-libs',
+            },
+            { title: 'Testing & Development Tools', filterKey: 'test' },
+            { title: 'Additional Tools', filterKey: 'tech' },
             { title: 'Design Tools', filterKey: 'design' },
           ]}
         />
