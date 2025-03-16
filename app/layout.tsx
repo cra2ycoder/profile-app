@@ -38,7 +38,7 @@ export default function RootLayout({
         />
         <meta
           name="keywords"
-          content="Web Developer, Full-Stack Developer, JavaScript/Typescript, React.js, Next.js, Node.js, Cypress"
+          content="Frontend Web Developer, Full-Stack Developer, JavaScript/Typescript, React.js, Next.js, Node.js, Cypress"
         />
       </head>
       <body className={parseCSS(themeClass)}>{children}</body>
