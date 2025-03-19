@@ -64,7 +64,7 @@ export default async function UserInfo() {
                     delay={0.2}
                     className="flex gap-2 text-lg dark:text-white text-gray-600"
                   >
-                    {index > 0 && <div>|</div>}
+                    {index > 0 && <div className="sm:block hidden">|</div>}
                     <p>{item}</p>
                   </ViewAnimationWrapper>
                 )
