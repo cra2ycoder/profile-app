@@ -9,11 +9,11 @@ export async function GET() {
       data: {
         name: 'Mohanraj Rangasamy',
         role: [
-          'Frontend Architect',
+          'Frontend Developer',
           'JS / TS, Node.js, Next.js, React.js, React Query, Cypress',
           'MFE',
         ],
-        description: `Frontend Developer (7+ years) & UI/UX Designer (8 years) with extensive experience in building responsive, user-friendly web applications in the recruiting industry. Proficient in <hlt>JavaScript, TypeScript, Node.js, React.js, Next.js, and TanStack React Query</hlt>, with a strong focus on performance, accessibility, and seamless user experiences. Skilled in <hlt>Figma, Sketch, Adobe Photoshop, and XD</hlt>, bridging design and development. Passionate about clean code, optimization, and staying ahead of web development trends.`,
+        description: `Frontend Developer & UI/UX Designer with <hlt>16 years of experience (8 years in each)</hlt>, specializing in responsive, user-friendly, and <hlt>microfrontend-based web applications</hlt>. Proficient in <hlt>JavaScript, TypeScript, React.js, Next.js, Node.js, and TanStack React Query</hlt>, with expertise in performance, accessibility, and seamless UX. Skilled in <hlt>Figma, Sketch, Adobe Photoshop, and XD</hlt>, bridging design and development. Passionate about clean code, optimization, and staying ahead of web trends.`,
         phoneNumber: '+(91) 770 829 629 5',
         email: 'mohanraj.dev.6789@gmail.com',
         location: 'Bangalore, Karnataka',
