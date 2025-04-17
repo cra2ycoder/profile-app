@@ -70,6 +70,7 @@ export function ViewAnimationWrapper(props: ViewAnimationProps) {
   const componentProps = {
     className: props.className,
     transition: { duration: 0.65, ease: 'anticipate', delay: props.delay },
+    viewport: { once: true },
     ...animationDirections[props.directions || 'bottom-to-top'],
   }
 
