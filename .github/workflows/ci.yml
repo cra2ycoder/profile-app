@@ -11,6 +11,6 @@ jobs:
         with:
           node-version: 20
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install
       - name: Run Test Cases
-        run: npm test
+        run: pnpm test
