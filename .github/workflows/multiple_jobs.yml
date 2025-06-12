@@ -1,4 +1,4 @@
-name: Integration
+name: Multiple Jobs
 on: push
 jobs:
   install:
