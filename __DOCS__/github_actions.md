@@ -27,8 +27,21 @@
 
 ## events
 
-- push
-- workflow_dispatch
+- `repo related`
+  - push
+  - pull_request
+  - create
+  - fork
+  - issues
+  - issue_comment
+  - watch
+  - discussion
+  
+- `others`
+  - workflow_dispatch
+  - repository_dispatch
+  - schedule
+  - workflow_call
 
 ## runners
 
