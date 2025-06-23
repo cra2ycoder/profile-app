@@ -59,3 +59,10 @@
 ## run scripts
 
 - echo "__log_message__"
+
+## env
+
+- [env-vars](https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables)
+- `${{ env.VAR_NAME }}`
+- `${{ secrets.VAR_NAME }}`
+- `echo "$ENV_VAR_NAME"`
