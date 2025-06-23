@@ -15,7 +15,6 @@ jobs:
       - name: Publish JS Filename
         id: publish-id
         run: find dist/assets/*.js -type f -execdir echo 'custom-name={}' >> $GITHUB_OUPUT ';'
-
       - name: Upload to Artifacts
         uses: actions/upload-artifact@v3
         with:
