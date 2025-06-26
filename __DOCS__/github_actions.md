@@ -66,3 +66,10 @@
 - `${{ env.VAR_NAME }}`
 - `${{ secrets.VAR_NAME }}`
 - `echo "$ENV_VAR_NAME"`
+
+## functions
+
+- `failure()`
+- `success()`
+- `always()`
+- `cancelled()`
