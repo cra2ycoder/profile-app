@@ -18,4 +18,9 @@ jobs:
         run: pnpm install
   test:
     needs: [install]
-    uses: ./.github/workflows/reusable.yml
+    # uses: ./.github/workflows/reusable.yml
+    uses: ./.github/workflows/reusable_with_dynamic_input.yml
+    with:
+      artifact-name: dist-files
+    secrets:
+      api-key: ${{ secrets.api-key }}
