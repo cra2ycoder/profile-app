@@ -18,7 +18,4 @@ jobs:
         run: pnpm install
   test:
     needs: [install]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run Test Cases
-        run: pnpm test
+    uses: ./.github/workflows/reusable.yml
