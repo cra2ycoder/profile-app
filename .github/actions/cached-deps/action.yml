@@ -1,15 +1,21 @@
 name: 'Get & Cache npm dependencies'
 description: 'Caching the dependencies after npm installed'
+inputs:
+  should-cache:
+    description: 'Used to enable cache or not'
+    required: true
+    default: 'true'
 runs:
   using: 'composite'
   steps:
     - name: Cache Dependencies
+      if: inputs.should-cache == 'true'
       uses: actions/cache@v3
       id: cache-id
       with:
         path: ~/.npm
         key: deps-node-modules${{ hashFiles('**/package-lock.json') }}
     - name: Install Dependencies
-      if: steps.cache-id.outputs.cache-hit != 'true'
+      if: steps.cache-id.outputs.cache-hit != 'true' || inputs.should-cache != 'true'
       run: npm ci
       shell: bash

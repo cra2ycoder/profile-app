@@ -8,6 +8,8 @@ jobs:
         uses: actions/checkout@v3
       - name: using custom actions for cache job
         uses: ./.github/actions/cached-deps
+        with:
+          should-cache: 'true'
       # following below is manual steps
       # - name: Cache Dependencies
       #   uses: actions/cache@v3
