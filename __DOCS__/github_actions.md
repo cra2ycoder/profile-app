@@ -73,3 +73,10 @@
 - `success()`
 - `always()`
 - `cancelled()`
+
+
+## Different type of custom actions
+
+- `docker actions`
+- `javascript actions`
+- `composite actions`
