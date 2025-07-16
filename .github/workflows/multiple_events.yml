@@ -1,8 +1,0 @@
-name: Multiple Events
-on: [push, workflow_dispatch]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install
-        run: pnpm install
