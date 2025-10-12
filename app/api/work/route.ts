@@ -9,7 +9,7 @@ export async function GET() {
         {
           logo: 'https://cra2ycoder.sirv.com//logos/logo_iqvia.png',
           name: 'IQVIA',
-          role: 'Mgr. Software Development Engineering',
+          role: 'Mgr. Software Development Engineering | Fullstack',
           duration: 'September 2025 - Present',
           responsibilities: [],
         },
