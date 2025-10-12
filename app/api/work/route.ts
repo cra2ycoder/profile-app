@@ -7,10 +7,17 @@ export async function GET() {
     {
       data: [
         {
+          logo: 'https://cra2ycoder.sirv.com//logos/logo_iqvia.png',
+          name: 'IQVIA',
+          role: 'Mgr. Software Development Engineering',
+          duration: 'September 2025 - Present',
+          responsibilities: [],
+        },
+        {
           logo: 'https://cra2ycoder.sirv.com//logos/logo_infy.jpg',
           name: 'Infosys Equinox',
           role: 'Architect EQ',
-          duration: 'August 2020 - Present',
+          duration: 'August 2020 - September 2025',
           responsibilities: [
             'Leading a development team of <hlt>40+ engineers to build interactive, dynamic, and scalable web applications</hlt> using a modern technologies, including <hlt>JavaScript (ES6+), TypeScript, React.js with Hooks, Next.js and tools like TanStack React Query, Express.js, Webpack, Storybook, React Testing Library and Jest.</hlt>',
             'Architecting scalable solutions with <hlt>Mono Repo and Micro-Frontend (MFE) architectures using Turbo Repo</hlt>, reducing code duplication by <hlt>50%</hlt> and enhancing developer efficiency by <hlt>25%.</hlt>',
