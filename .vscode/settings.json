@@ -42,7 +42,7 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/.gitignore": true,
+    // "**/.gitignore": true,
     "**/node_modules": true,
     "**/.next": true,
     "**/__pycache__": true,
