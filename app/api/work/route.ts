@@ -7,14 +7,14 @@ export async function GET() {
     {
       data: [
         {
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_iqvia.png',
+          logo: 'https://cra2ycoder.sirv.com/logos/logo_iqvia.png',
           name: 'IQVIA',
           role: 'Mgr. Software Development Engineering | Fullstack',
           duration: 'September 2025 - Present',
           responsibilities: [],
         },
         {
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_infy.jpg',
+          logo: 'https://cra2ycoder.sirv.com/logos/logo_infy.jpg',
           name: 'Infosys Equinox',
           role: 'Architect EQ',
           duration: 'August 2020 - September 2025',
@@ -40,7 +40,7 @@ export async function GET() {
           ],
         },
         {
-          logo: 'https://cra2ycoder.sirv.com//logos/logo_skava.png',
+          logo: 'https://cra2ycoder.sirv.com/logos/logo_skava.png',
           name: 'Skava an Infosys',
           role: 'Creative Manager, Sr. Creative Engineer, Creative Engineer',
           duration: 'March 2009 - August 2020',
